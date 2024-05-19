@@ -20,8 +20,8 @@ const Card = ({ item, onPress }) => {
           ></ImageBackground>
         </View>
         <View style={styles.textContainer}>
-          <Text style={styles.textName}> {item.category} </Text>
-          <Text style={styles.textCity}> {item.price} </Text>
+          <Text style={styles.textName}> {item.price} </Text>
+          <Text style={styles.textCity}> {item.category} </Text>
         </View>
       </View>
     </TouchableWithoutFeedback>

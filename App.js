@@ -5,14 +5,7 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { NavigationContainer } from "@react-navigation/native";
 
 import HomeScreen from "./pages/HomeScreen";
-
-function SettingsScreen() {
-  return (
-    <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-      <Text>Settings!</Text>
-    </View>
-  );
-}
+import TourScreen from "./pages/TourScreen";
 
 function ProfileScreen() {
   return (
@@ -34,8 +27,8 @@ export default function App() {
           options={{ headerShown: false }}
         />
         <Tab.Screen
-          name="Settings"
-          component={SettingsScreen}
+          name="TourScreen"
+          component={TourScreen}
           options={{ headerShown: false }}
         />
         <Tab.Screen

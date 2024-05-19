@@ -1,15 +1,20 @@
 import React from "react";
-import { View, Text, StyleSheet, FlatList } from "react-native";
+import { View, Text, StyleSheet, FlatList, ScrollView } from "react-native";
 // FlatList componentinin dosya yoluna göre düzenleyin
 import FlatListComponent from "../component/Flat/FlatListComponent.js";
 import CarouselComponent from "../component/Slider/CarouselComponent.js";
 
 const HomeScreen = () => {
   return (
-    <View style={styles.container}>
-      <CarouselComponent />
-      <FlatListComponent />
-    </View>
+    <ScrollView>
+      <View style={styles.container}>
+        <CarouselComponent />
+        <FlatListComponent header={"İstanbul Turları"} />
+        <FlatListComponent header={"Avrupa Turları"} />
+        <FlatListComponent header={"Mayıs Ayı Önerileri"} />
+        <FlatListComponent header={"İtalya Turları"} />
+      </View>
+    </ScrollView>
   );
 };
 
