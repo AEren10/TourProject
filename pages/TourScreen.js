@@ -13,127 +13,150 @@ import {
 
 import FavoriteIcon from "../component/Icon/FavoriteIcon";
 import TourCard from "../component/Cards/TourCard";
+import calculateDistance from "../Utils/calculateDistance";
+import Card from "../component/Cards/Card";
 
 const { width } = Dimensions.get("window");
 
-const data = [
-  {
-    id: "hakkinda",
-    title: "Hakkında",
-    description: () => (
-      <ScrollView>
-        <View>
-          <TourCard text={"asasdfasdfsdafsdaf"} />
-          <TourCard number={2} />
-          <TourCard number={3} />
-          <TourCard number={4} />
-          <TourCard number={5} />
-          <TourCard number={6} />
-          <TourCard number={7} />
-          <TourCard number={8} />
-        </View>
-      </ScrollView>
-    ),
-  },
-  {
-    id: "İpuçları",
-    title: "İpuçları",
-    description: () => <Text>buraya açıklama gelecek vsvsvsvs</Text>,
-  },
-  {
-    id: "benzer",
-    title: "Benzer",
-    description: () => (
-      <ScrollView>
-        <View>
-          <TourCard number={2} />
-          <TourCard number={3} />
-          <TourCard number={4} />
-        </View>
-      </ScrollView>
-    ),
-  },
-];
-
-const TourScreen = () => {
-  const [selectedId, setSelectedId] = useState(data[0].id); // İlk başlık varsayılan olarak seçili
-  const [currentIndex, setCurrentIndex] = useState(0); // İlk başlık varsayılan olarak seçili
+const TourScreen = ({ route }) => {
+  const { tourData } = route.params;
+  const [selectedId, setSelectedId] = useState(0);
   const scrollX = useRef(new Animated.Value(0)).current;
+  const scrollViewRef = useRef();
 
-  const language = "Türkçe";
-  const duration = "25";
-  const stops = "16";
+  const renderStops = () => {
+    return tourData.places.map((place, index) => (
+      <TourCard stop={place} index={index} />
+    ));
+  };
+  //****************************************** */
 
-  const renderItem = ({ item }) => (
-    <TouchableOpacity
-      onPress={() => {
-        setSelectedId(item.id);
-        setCurrentIndex(data.findIndex((d) => d.id === item.id));
-      }}
-      style={styles.headerContainer}
-    >
-      <View
-        style={[
-          styles.headerContainer,
-          selectedId === item.id && styles.selectedHeaderContainer,
-        ]}
-      >
-        <Text
-          style={[
-            styles.headerText,
-            selectedId === item.id && styles.selectedHeaderText,
-          ]}
-          onPress={() => setSelectedId(item.id)}
-        >
-          {item.title}
-        </Text>
-        {selectedId === item.id && <View style={styles.selectedIndicator} />}
-      </View>
-    </TouchableOpacity>
-  );
+  // total süre hesaplama
+  let totalDistance = 0;
+  const averageSpeed = 25; // km/h
+
+  for (let i = 0; i < tourData.places.length - 1; i++) {
+    const { lat: lat1, lon: lon1 } = tourData.places[i];
+    const { lat: lat2, lon: lon2 } = tourData.places[i + 1];
+
+    totalDistance += calculateDistance(lat1, lon1, lat2, lon2);
+  }
+
+  const averageTimeHours = totalDistance / averageSpeed;
+  const averageTimeMinutes = averageTimeHours * 60;
+  let totalTime = Math.round(averageTimeMinutes);
+
+  //total durak hesaplama
+  const getTotalStopsAndDuration = () => {
+    let totalStops = tourData.places.length;
+    let totalDuration = 0;
+
+    tourData.places.forEach((place) => {
+      totalDuration += place.duration || 0;
+    });
+
+    return { totalStops };
+  };
+
+  const { totalStops, totalDuration } = getTotalStopsAndDuration();
+
+  const handleTabClick = (tabId) => {
+    setSelectedId(tabId);
+    scrollViewRef.current.scrollTo({ x: tabId * width, animated: true });
+  };
   const indicatorWidth = scrollX.interpolate({
-    inputRange: data.map((_, i) => i * width),
-    outputRange: data.map(() => 100), // Genişliği ayarlayabilirsiniz
+    inputRange: [0, width, 2 * width],
+    outputRange: [width / 3, width / 3, width / 3], // Genişliği ayarlayabilirsiniz
   });
 
   const translateX = scrollX.interpolate({
-    inputRange: data.map((_, i) => i * width),
-    outputRange: data.map((_, i) => i * (width / data.length)),
+    inputRange: [0, width, 2 * width],
+    outputRange: [0, width / 3, 2 * (width / 3)],
   });
+
   return (
     <View style={styles.container}>
       <View style={styles.fixedContent}>
-        <Image style={styles.image} />
+        <Image style={styles.image} source={{ uri: "your-image-url" }} />
         <View style={styles.textContainer}>
           <Text style={styles.title}>Başlık</Text>
           <Text style={styles.subtitle}>Alt başlık</Text>
         </View>
         <View style={styles.infoBar}>
           <Text style={styles.infoBarText}>
-            {stops} durak • {language} • {duration} dakika
+            {totalStops} Durak • {totalTime} Dakika • Türkçe
           </Text>
-          <FavoriteIcon style={styles.infoBarIcon} />
+          <FavoriteIcon />
         </View>
         <View style={styles.locationContainer}>
           <Text style={styles.locationText}>İstanbul, Türkiye</Text>
         </View>
       </View>
+
       <View style={styles.scrollableContent}>
-        <FlatList
-          horizontal
-          data={data}
-          renderItem={renderItem}
-          keyExtractor={(item) => item.id}
-          style={styles.headerList}
-          showsHorizontalScrollIndicator={false}
-          contentContainerStyle={styles.headerListContent}
-        />
+        <View style={styles.headerList}>
+          <TouchableOpacity
+            onPress={() => handleTabClick(0)}
+            style={[
+              styles.headerContainer,
+              selectedId === 0 && styles.selectedHeaderContainer,
+            ]}
+          >
+            <Text
+              style={[
+                styles.headerText,
+                selectedId === 0 && styles.selectedHeaderText,
+              ]}
+            >
+              Hakkında
+            </Text>
+            {selectedId === 0 && <View style={styles.selectedIndicator} />}
+          </TouchableOpacity>
+
+          <TouchableOpacity
+            onPress={() => handleTabClick(1)}
+            style={[
+              styles.headerContainer,
+              selectedId === 1 && styles.selectedHeaderContainer,
+            ]}
+          >
+            <Text
+              style={[
+                styles.headerText,
+                selectedId === 1 && styles.selectedHeaderText,
+              ]}
+            >
+              İpuçları
+            </Text>
+            {selectedId === 1 && <View style={styles.selectedIndicator} />}
+          </TouchableOpacity>
+
+          <TouchableOpacity
+            onPress={() => handleTabClick(2)}
+            style={[
+              styles.headerContainer,
+              selectedId === 2 && styles.selectedHeaderContainer,
+            ]}
+          >
+            <Text
+              style={[
+                styles.headerText,
+                selectedId === 2 && styles.selectedHeaderText,
+              ]}
+            >
+              Benzer
+            </Text>
+            {selectedId === 2 && <View style={styles.selectedIndicator} />}
+          </TouchableOpacity>
+        </View>
+
         <Animated.View
           style={[
             styles.animatedIndicator,
             { width: indicatorWidth, transform: [{ translateX }] },
           ]}
         />
+
         <ScrollView
           horizontal
           pagingEnabled
@@ -143,18 +166,28 @@ const TourScreen = () => {
           )}
           onMomentumScrollEnd={(e) => {
             const index = Math.round(e.nativeEvent.contentOffset.x / width);
-            setSelectedId(data[index].id);
+            setSelectedId(index);
           }}
           style={styles.descScroll}
-          ref={(scrollView) => {
-            this.scrollView = scrollView;
-          }}
+          ref={scrollViewRef}
         >
-          {data.map((item) => (
-            <View key={item.id} style={styles.descContainer}>
-              {selectedId === item.id && item.description()}
+          <ScrollView style={styles.InnerContainerScroll}>
+            <View style={[styles.contentContainer, { width }]}>
+              <View style={styles.contentInnerContainer}>{renderStops()}</View>
             </View>
-          ))}
+          </ScrollView>
+          <ScrollView style={styles.InnerContainerScroll}>
+            <View style={[styles.contentContainer, { width }]}>
+              <View style={styles.contentInnerContainer}></View>
+            </View>
+          </ScrollView>
+          <ScrollView style={styles.InnerContainerScroll}>
+            <View style={[styles.contentContainer, { width }]}>
+              <View style={styles.contentInnerContainer}>
+                <Text>İçerik 1</Text>
+              </View>
+            </View>
+          </ScrollView>
         </ScrollView>
       </View>
     </View>
@@ -226,7 +259,8 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   headerList: {
-    flexGrow: 0,
+    flexDirection: "row",
+    justifyContent: "space-around",
   },
   headerListContent: {
     paddingHorizontal: 10,
@@ -262,6 +296,9 @@ const styles = StyleSheet.create({
   descText: {
     fontSize: 14,
   },
+  contentContainer: { justifyContent: "center", alignItems: "center" },
+  contentInnerContainer: { padding: 20 },
+  InnerContainerScroll: {},
 });
 
 export default TourScreen;

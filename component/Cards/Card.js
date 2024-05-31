@@ -18,10 +18,10 @@ const Card = ({ item, onPress }) => {
             style={styles.image}
             source={{ uri: "https://i.pravatar.cc" }}
           ></ImageBackground>
-        </View>
-        <View style={styles.textContainer}>
-          <Text style={styles.textName}> {item.price} </Text>
-          <Text style={styles.textCity}> {item.category} </Text>
+          <View style={styles.textContainer}>
+            <Text style={styles.textName}> ÇÖLŞQWMŞLQQEÖ</Text>
+            <Text style={styles.textCity}> {item.name} </Text>
+          </View>
         </View>
       </View>
     </TouchableWithoutFeedback>
@@ -31,7 +31,7 @@ const Card = ({ item, onPress }) => {
 const styles = StyleSheet.create({
   container: {
     width: 240,
-    height: 140,
+    height: 190,
     margin: 10,
     borderBottomLeftRadius: 15,
     borderBottomRightRadius: 15,
@@ -47,7 +47,6 @@ const styles = StyleSheet.create({
   textName: {
     fontSize: 18,
     color: "black",
-    textAlign: "left",
     marginBottom: 6,
     marginTop: 6,
   },

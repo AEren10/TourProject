@@ -3,24 +3,23 @@ import React from "react";
 import { View, Text, Image, StyleSheet, TouchableOpacity } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 
-const TourCard = ({ imageUrl, text, number, targetScreen, params }) => {
+const TourCard = ({ targetScreen, stop, index }) => {
   const navigation = useNavigation();
 
   const handlePress = () => {
     //navigation.navigate(targetScreen, params);
-    {
-    }
-    console.log(number, "carda bastın suan");
+
+    console.log(stop, "carda bastın suan");
   };
 
   return (
     <TouchableOpacity style={styles.card} onPress={handlePress}>
-      <Image source={{ uri: imageUrl }} style={styles.image} />
+      <Image style={styles.image} source={stop} />
       <View style={styles.textContainer}>
-        <Text style={styles.text}>{text}</Text>
+        <Text style={styles.text}>{stop.name}</Text>
       </View>
       <View style={styles.numberContainer}>
-        <Text style={styles.number}>{number}</Text>
+        <Text style={styles.number}>{index + 1}</Text>
       </View>
     </TouchableOpacity>
   );
@@ -28,7 +27,8 @@ const TourCard = ({ imageUrl, text, number, targetScreen, params }) => {
 
 const styles = StyleSheet.create({
   card: {
-    height: 80,
+    height: 70,
+    width: 380,
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-between",

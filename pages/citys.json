@@ -1,0 +1,261 @@
+{
+  "cities": [
+    {
+      "name": "İstanbul",
+      "tours": [
+        {
+          "name": "Üsküdar Turu",
+          "places": [
+            {
+              "lat": 41.0156168,
+              "lon": 29.0175012,
+              "name": "Kamuran Usluer mezarı",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJ05MQS8-5yhQRgnhzW9JAx2g",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 0
+            },
+            {
+              "lat": 41.0217568,
+              "lon": 29.0066096,
+              "name": "Üsküdar -İstanbul",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJZ0ziTKi5yhQRQRs5YSR5LVw",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.7
+            },
+            {
+              "lat": 41.0423821,
+              "lon": 29.0389218,
+              "name": "Beylerbeyi Sarayı Deniz Köşkü Selamlık",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJz22UC9q3yhQR4RqiiMp9vio",
+              "place_types": ["point_of_interest", "establishment"],
+              "rating": 4.8
+            },
+            {
+              "lat": 41.02044730000001,
+              "lon": 29.0289001,
+              "name": "Tarihi Tekke Kalıntısı",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJ2dmphPa3yhQRyH51AunAbmk",
+              "place_types": ["point_of_interest", "establishment"],
+              "rating": 4.3
+            },
+            {
+              "lat": 41.026793,
+              "lon": 29.0153459,
+              "name": "III. Ahmet Çeşmesi",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJ32s1x463yhQR4Co3gPRFEHc",
+              "place_types": ["point_of_interest", "establishment"],
+              "rating": 4.6
+            },
+            {
+              "lat": 41.0282664,
+              "lon": 29.0415755,
+              "name": "Abdülmecid Efendi Köşkü",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJcV2dX-G3yhQR6UYR06pFA58",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.4
+            },
+            {
+              "lat": 41.040874,
+              "lon": 29.0387099,
+              "name": "Ahır Köşkü",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJJ4EeONq3yhQRp_yYlmeCL7o",
+              "place_types": ["point_of_interest", "establishment"],
+              "rating": 4.1
+            },
+            {
+              "lat": 41.0196982,
+              "lon": 29.0199711,
+              "name": "Üsküdar Su Yolu Kalıntısı",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJ0ePE-nG5yhQRAVqmNn87x74",
+              "place_types": ["point_of_interest", "establishment"],
+              "rating": 0
+            },
+            {
+              "lat": 41.0416092,
+              "lon": 29.0410264,
+              "name": "Sarı Köşk",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJcwLi5Nm3yhQR4LLBvsuuqI0",
+              "place_types": ["point_of_interest", "establishment"],
+              "rating": 4.1
+            },
+            {
+              "lat": 41.040792,
+              "lon": 29.0401562,
+              "name": "Mermer Köşk",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJF2ujINq3yhQRLVqycXX9E_Q",
+              "place_types": ["point_of_interest", "establishment"],
+              "rating": 4.4
+            },
+            {
+              "lat": 41.0211216,
+              "lon": 29.0041105,
+              "name": "Kız Kulesi",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJX0SZ6iu4yhQRbEe0zrr0124",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.7
+            },
+            {
+              "lat": 41.0215937,
+              "lon": 29.0104956,
+              "name": "Ayşe Sultan Çeşmesi",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJL6wFDSi4yhQRUEuO6HgBcuE",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 3.8
+            },
+            {
+              "lat": 41.0369423,
+              "lon": 29.0422568,
+              "name": "15 Temmuz Şehitler Anıtı",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJi59wNNm3yhQRPaPHi3x4aYc",
+              "place_types": ["point_of_interest", "establishment"],
+              "rating": 4.8
+            },
+            {
+              "lat": 41.042755,
+              "lon": 29.0452317,
+              "name": "Lazın Köşkü",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJH5zDzte3yhQR8ybs_i_BHyQ",
+              "place_types": ["point_of_interest", "establishment"],
+              "rating": 4.2
+            }
+          ]
+        },
+        {
+          "name": "Beyoğlu Turu",
+          "places": [
+            {
+              "lat": 41.0156168,
+              "lon": 29.0175012,
+              "name": "Kamuran Usluer mezarı",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJ05MQS8-5yhQRgnhzW9JAx2g",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 0
+            },
+            {
+              "lat": 41.0217568,
+              "lon": 29.0066096,
+              "name": "Üsküdar -İstanbul",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJZ0ziTKi5yhQRQRs5YSR5LVw",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.7
+            },
+            {
+              "lat": 41.0423821,
+              "lon": 29.0389218,
+              "name": "Beylerbeyi Sarayı Deniz Köşkü Selamlık",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJz22UC9q3yhQR4RqiiMp9vio",
+              "place_types": ["point_of_interest", "establishment"],
+              "rating": 4.8
+            },
+            {
+              "lat": 41.02044730000001,
+              "lon": 29.0289001,
+              "name": "Tarihi Tekke Kalıntısı",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJ2dmphPa3yhQRyH51AunAbmk",
+              "place_types": ["point_of_interest", "establishment"],
+              "rating": 4.3
+            },
+            {
+              "lat": 41.026793,
+              "lon": 29.0153459,
+              "name": "III. Ahmet Çeşmesi",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJ32s1x463yhQR4Co3gPRFEHc",
+              "place_types": ["point_of_interest", "establishment"],
+              "rating": 4.6
+            },
+            {
+              "lat": 41.0282664,
+              "lon": 29.0415755,
+              "name": "Abdülmecid Efendi Köşkü",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJcV2dX-G3yhQR6UYR06pFA58",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.4
+            },
+            {
+              "lat": 41.040874,
+              "lon": 29.0387099,
+              "name": "Ahır Köşkü",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJJ4EeONq3yhQRp_yYlmeCL7o",
+              "place_types": ["point_of_interest", "establishment"],
+              "rating": 4.1
+            }
+          ]
+        },
+        {
+          "name": "Bağdat Caddesi Turu",
+          "places": []
+        }
+      ]
+    },
+    {
+      "name": "Ankara",
+      "tours": [
+        {
+          "name": "Ankannnnara Turu",
+          "places": []
+        },
+        {
+          "name": "Ankardddddda Turu",
+          "places": []
+        },
+        {
+          "name": "Anaaaaaakara Turu",
+          "places": []
+        }
+      ]
+    }
+  ]
+}

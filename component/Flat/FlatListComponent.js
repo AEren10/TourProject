@@ -1,42 +1,30 @@
 import React, { useEffect, useState } from "react";
-import { View, StyleSheet, FlatList, Image, Text } from "react-native";
+import { View, StyleSheet, ScrollView, Text } from "react-native";
+import { useNavigation } from "@react-navigation/native";
 
 import Card from "../Cards/Card";
 
-const FlatListComponent = ({ header }) => {
-  const [newsData, setNewsData] = useState([]);
+const FlatListComponent = ({ header, newsData }) => {
+  const navigation = useNavigation();
 
-  useEffect(() => {
-    fetch("https://fakestoreapi.com/products/")
-      .then((response) => response.json())
-      .then((data) => {
-        const slicedData = data.slice(0, 5); // İlk 5 veriyi al
-
-        setNewsData(slicedData);
-      })
-      .catch((error) => {
-        console.error(error);
-      });
-  }, []);
-
+  if (!newsData) {
+    return null; // Eğer newsData undefined ise component render etmeyin
+  }
   return (
     <View style={styles.container}>
       <Text style={styles.name}>{header}</Text>
-      <FlatList
-        data={newsData}
-        horizontal
-        showsHorizontalScrollIndicator={false}
-        renderItem={({ item }) => (
+      <ScrollView horizontal showsHorizontalScrollIndicator={false}>
+        {newsData.map((item) => (
           <Card
+            key={item.id}
             item={item}
             onPress={() => {
-              console.log(`Flat item ${item.id} basıldı`);
-              // Kart'a basıldığında yapılacak işlemleri buraya yazabilirsiniz
+              console.log(`Flat item basıldı`);
+              navigation.navigate("TourScreen", { tourData: item });
             }}
           />
-        )}
-        keyExtractor={(item) => item.id.toString()}
-      />
+        ))}
+      </ScrollView>
     </View>
   );
 };
