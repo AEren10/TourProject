@@ -4,7 +4,8 @@
       "name": "İstanbul",
       "tours": [
         {
-          "name": "Üsküdar Turu",
+          "name": "Üsküdar ",
+          "tourImage": "https://www.lezzetarayanlara.com/class/INNOVAEditor/assets/k%C4%B1z%20kulesi%20ve%20g%C3%BCne%C5%9Fin%20bat%C4%B1%C5%9F%C4%B1.jpg",
           "places": [
             {
               "lat": 41.0156168,
@@ -22,7 +23,7 @@
             {
               "lat": 41.0217568,
               "lon": 29.0066096,
-              "name": "Üsküdar -İstanbul",
+              "name": "Üsküdar - İstanbul",
               "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
               "place_id": "ChIJZ0ziTKi5yhQRQRs5YSR5LVw",
               "place_types": [
@@ -155,7 +156,7 @@
           ]
         },
         {
-          "name": "Beyoğlu Turu",
+          "name": "Beyoğlu ",
           "places": [
             {
               "lat": 41.0156168,
@@ -235,7 +236,7 @@
           ]
         },
         {
-          "name": "Bağdat Caddesi Turu",
+          "name": "Bağdat Caddesi ",
           "places": []
         }
       ]

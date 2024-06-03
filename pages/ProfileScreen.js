@@ -26,7 +26,6 @@ const fetchPlaces = async (city) => {
     })
     .then((data) => {
       // İstek başarılı oldu, JSON verisini kullanabilirsiniz
-      console.log(data);
     })
     .catch((error) => {
       // İstekte hata oluştu

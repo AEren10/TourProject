@@ -6,7 +6,7 @@ import TourCard from "../component/Cards/TourCard";
 import { createGraph } from "../Utils/Graph";
 import { dijkstra } from "../Utils/Dijkstra";
 
-const API_KEY = "AIzaSyBfGpyUzM8aM059UtpeCmpUzWxMiwev9n";
+const API_KEY = "AIzaSyBfGpyUzM8aM059UtpeCmpUzWxMiwev9n0";
 
 export default function TourScreen() {
   const [stops, setStops] = useState([]);
@@ -28,13 +28,15 @@ export default function TourScreen() {
         place_icon: place.icon_mask_base_uri,
         place_types: place.types,
       }));
-      console.log(fetchedStops);
+
       setStops(fetchedStops);
     } catch (error) {
       console.error("Error fetching stops:", error);
     }
   };
+  //***************************** */
 
+  /* ************************ */
   useEffect(() => {
     if (stops.length > 0) {
       const graph = createGraph(stops);
@@ -53,6 +55,10 @@ export default function TourScreen() {
     }
   }, [stops]);
 
+  const fetchTourData = async (city) => {
+    await fetchStops(city);
+  };
+
   return (
     <ScrollView style={styles.container}>
       <Text style={styles.title}>Tour Screen</Text>
@@ -62,7 +68,7 @@ export default function TourScreen() {
         value={city}
         onChangeText={setCity}
       />
-      <Button title="Fetch Tour" onPress={() => fetchStops(city)} />
+      <Button title="Fetch Tour" onPress={() => fetchTourData(city)} />
       {tour.length > 0 &&
         tour.map((stop, index) => (
           <TourCard key={index} stop={stop} index={index} />

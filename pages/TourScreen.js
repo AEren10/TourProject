@@ -14,7 +14,8 @@ import {
 import FavoriteIcon from "../component/Icon/FavoriteIcon";
 import TourCard from "../component/Cards/TourCard";
 import calculateDistance from "../Utils/calculateDistance";
-import Card from "../component/Cards/Card";
+import StarHalfIcon from "../component/Icon/StarHalfIcon";
+import StarIcon from "../component/Icon/StarIcon";
 
 const { width } = Dimensions.get("window");
 
@@ -29,7 +30,6 @@ const TourScreen = ({ route }) => {
       <TourCard stop={place} index={index} />
     ));
   };
-  //****************************************** */
 
   // total süre hesaplama
   let totalDistance = 0;
@@ -73,14 +73,41 @@ const TourScreen = ({ route }) => {
     inputRange: [0, width, 2 * width],
     outputRange: [0, width / 3, 2 * (width / 3)],
   });
+  /*     rating değeri    */
+  const ratings = tourData.places
+    .map((place) => place.rating)
+    .filter((rating) => rating > 0);
 
+  // Durakların ratinglerinin ortalamasını al
+  const ortalamaRating =
+    ratings.length > 0
+      ? ratings.reduce((total, rating) => total + rating) / ratings.length
+      : 0;
+
+  // Ortalama rating'e göre tam ve yarım yıldız sayılarını hesapla
+  const tamYildizSayisi = Math.floor(ortalamaRating);
+  const yarimYildizVarMi = ortalamaRating % 1 !== 0;
+
+  //****************************** */
   return (
     <View style={styles.container}>
       <View style={styles.fixedContent}>
-        <Image style={styles.image} source={{ uri: "your-image-url" }} />
+        <Image style={styles.image} source={{ uri: tourData.tourImage }} />
         <View style={styles.textContainer}>
-          <Text style={styles.title}>Başlık</Text>
-          <Text style={styles.subtitle}>Alt başlık</Text>
+          <Text style={styles.title}>{tourData.name}</Text>
+          <View
+            style={{
+              flexDirection: "row",
+              alignItems: "center",
+              marginTop: 3,
+            }}
+          >
+            {[...Array(tamYildizSayisi)].map((_, i) => (
+              <StarIcon key={i} />
+            ))}
+            {yarimYildizVarMi && <StarHalfIcon />}
+            <Text style={{ marginLeft: 5 }}>{ortalamaRating.toFixed(1)}</Text>
+          </View>
         </View>
         <View style={styles.infoBar}>
           <Text style={styles.infoBarText}>
@@ -89,7 +116,7 @@ const TourScreen = ({ route }) => {
           <FavoriteIcon />
         </View>
         <View style={styles.locationContainer}>
-          <Text style={styles.locationText}>İstanbul, Türkiye</Text>
+          <Text style={styles.locationText}>{tourData.name},</Text>
         </View>
       </View>
 
@@ -226,7 +253,7 @@ const styles = StyleSheet.create({
     paddingLeft: 20,
     paddingRight: 25,
     flexDirection: "row",
-    alignItems: "center",
+    aligntourDatas: "center",
     justifyContent: "space-between",
   },
   infoBarText: {
