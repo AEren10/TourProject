@@ -1,72 +1,77 @@
-import React, { useState } from "react";
-import {
-  View,
-  Text,
-  TextInput,
-  Button,
-  FlatList,
-  StyleSheet,
-} from "react-native";
-import TourCard from "../component/Cards/TourCard"; // TourCard bileşeninin doğru yolu burada olmalı
+import React, { useState, useEffect } from "react";
+import { View, ScrollView, StyleSheet, Text, FlatList } from "react-native";
+import SearchBar from "../component/SearchScreen/SearchBar.js";
+import PopularSearchItem from "../component/SearchScreen/PopularSearchItem.js";
+import SearchCard from "../component/SearchScreen/SearchCard.js";
+const jsonData = require("./citys.json");
+// JSON dosyasını içe aktarma
 
-const API_KEY = "AIzaSyBfGpyUzM8aM059UtpeCmpUzWxMiwev9n0"; // Google Places API anahtarınızı buraya ekleyin
-
-const fetchPlaces = async (city) => {
-  const placeId = "ChIJz22UC9q3yhQR4RqiiMp9vio"; // Yerinizin place_id'si
-  const apiKey = "YOUR_API_KEY"; // Google Places API anahtarınız
-
-  const url = `https://maps.googleapis.com/maps/api/place/details/json?place_id=${placeId}&fields=name,rating,formatted_address,photos,reviews&key=${API_KEY}`;
-
-  fetch(url)
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error("Network response was not ok");
-      }
-      return response.json();
-    })
-    .then((data) => {
-      // İstek başarılı oldu, JSON verisini kullanabilirsiniz
-    })
-    .catch((error) => {
-      // İstekte hata oluştu
-      console.error("There was a problem with your fetch operation:", error);
-    });
-};
+const tours = jsonData.cities.flatMap((city) => city.tours);
+const popularTours = tours.slice(0, 8);
 
 const ProfileScreen = () => {
-  const [city, setCity] = useState("");
-  const [places, setPlaces] = useState([]);
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(null);
-  const [fetched, setFetched] = useState(false); // Yeni state
+  const [randomTours, setRandomTours] = useState([]);
 
-  fetchPlaces();
-  // Eğer fetched true ise ve places state'i güncellenmişse FlatList'i render et
+  useEffect(() => {
+    const tours = jsonData.cities.flatMap((city) =>
+      city.tours.map((tour) => tour.name)
+    );
+    const randomTours = tours.sort(() => 0.5 - Math.random()).slice(0, 7);
+    setRandomTours(randomTours);
+  }, []);
 
   return (
-    <View style={styles.container}>
-      <Text style={styles.title}>Şehir İsmi Girin:</Text>
+    <ScrollView style={styles.container}>
+      <SearchBar jsonData={jsonData} />
 
-      {/* renderList fonksiyonunu çağır */}
-    </View>
+      <View style={styles.section}>
+        <Text style={styles.sectionTitle}>Popüler Aramalar</Text>
+        <View style={styles.popularSearches}>
+          {randomTours.map((item, index) => (
+            <PopularSearchItem key={index} text={item} />
+          ))}
+        </View>
+      </View>
+
+      <View style={styles.container}>
+        <Text style={styles.sectionTitle}>Popüler Turlar</Text>
+        <FlatList
+          data={popularTours}
+          renderItem={({ item }) => (
+            <SearchCard image={item.image} title={item.name} />
+          )}
+          keyExtractor={(item, index) => index.toString()}
+          numColumns={2}
+          contentContainerStyle={styles.list}
+        />
+      </View>
+    </ScrollView>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    padding: 20,
+    padding: 10,
+    marginTop: 10,
   },
-  title: {
+  section: {
+    marginBottom: 20,
+    marginTop: 20,
+    marginLeft: 10,
+  },
+  sectionTitle: {
     fontSize: 20,
+    fontWeight: "bold",
     marginBottom: 10,
   },
-  input: {
-    height: 40,
-    borderColor: "gray",
-    borderWidth: 1,
-    marginBottom: 10,
-    paddingLeft: 8,
+  popularSearches: {
+    flexDirection: "row",
+    flexWrap: "wrap",
+  },
+  tours: {
+    flexDirection: "row",
+    flexWrap: "wrap",
   },
 });
 

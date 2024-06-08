@@ -30,6 +30,7 @@ export default function TourScreen() {
       }));
 
       setStops(fetchedStops);
+      // console.log(fetchedStops);
     } catch (error) {
       console.error("Error fetching stops:", error);
     }

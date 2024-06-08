@@ -253,11 +253,12 @@ const styles = StyleSheet.create({
     paddingLeft: 20,
     paddingRight: 25,
     flexDirection: "row",
-    aligntourDatas: "center",
+    alignItems: "center",
     justifyContent: "space-between",
   },
   infoBarText: {
     fontSize: 15,
+    fontWeight: "550",
   },
   locationContainer: {
     position: "absolute",

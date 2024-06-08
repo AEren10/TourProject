@@ -34,8 +34,8 @@ const Card = ({ item, onPress }) => {
             source={{ uri: item.tourImage }}
           ></ImageBackground>
           <View style={styles.textContainer}>
-            <Text style={styles.textName}> ÇÖLŞQWMŞLQQEÖ</Text>
-            <Text style={styles.textCity}> {item.name} </Text>
+            <Text style={styles.textName}>{item.tourHeader}</Text>
+            <Text style={styles.textCity}>{item.name}</Text>
             <View
               style={{
                 flexDirection: "row",
@@ -59,7 +59,7 @@ const Card = ({ item, onPress }) => {
 const styles = StyleSheet.create({
   container: {
     width: 240,
-    height: 210,
+    height: 230,
     margin: 10,
     borderBottomLeftRadius: 15,
     borderBottomRightRadius: 15,

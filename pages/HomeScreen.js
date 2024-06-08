@@ -9,20 +9,26 @@ const cityData = require("./citys.json");
 
 const HomeScreen = () => {
   const [istanbulData, setIstanbulData] = useState([]);
-  const [avrupaData, setAvrupaData] = useState([]);
+  const [italyaData, setitalyaData] = useState([]);
+  const [ispanyaData, setispanyaData] = useState([]);
 
   useEffect(() => {
     const istanbulCity = cityData.cities.find(
       (city) => city.name === "İstanbul"
     );
-    const avrupaCity = cityData.cities.find((city) => city.name === "Ankara");
+    const italyaCity = cityData.cities.find((city) => city.name === "İtalya");
+    const ispanyaCity = cityData.cities.find((city) => city.name === "İspanya");
 
     if (istanbulCity) {
       setIstanbulData(istanbulCity.tours);
     }
 
-    if (avrupaCity) {
-      setAvrupaData(avrupaCity.tours);
+    if (italyaCity) {
+      setitalyaData(italyaCity.tours);
+    }
+
+    if (ispanyaCity) {
+      setispanyaData(ispanyaCity.tours);
     }
   }, []);
 
@@ -34,8 +40,8 @@ const HomeScreen = () => {
           header={"İstanbul Turları"}
           newsData={istanbulData}
         />
-        <FlatListComponent header={"Avrupa Turları"} newsData={avrupaData} />
-        <FlatListComponent header={"Mayıs Ayı Önerileri"} />
+        <FlatListComponent header={"İtalya Turları"} newsData={italyaData} />
+        <FlatListComponent header={"İspanya Turları"} newsData={ispanyaData} />
         <FlatListComponent header={"İtalya Turları"} />
       </View>
     </ScrollView>
