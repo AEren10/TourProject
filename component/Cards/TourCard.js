@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { View, Text, Image, StyleSheet, TouchableOpacity } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 
-const API_KEY = "AIzaSyBfGpyUzM8aM059UtpeCmpUzWxMiwev9n0";
+const API_KEY = "AIzaSyBfGpyUzM8aM059UtpeCmpUzWxMiwev9n";
 
 const TourCard = ({ targetScreen, stop, index }) => {
   const navigation = useNavigation();
@@ -13,14 +13,23 @@ const TourCard = ({ targetScreen, stop, index }) => {
 
     console.log(stop, "carda bastın suan");
   };
-
+  const photoCache = {};
   const [photos, setPhotos] = useState([]);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    fetchPhotos(stop.place_id);
-  }, []);
+    if (stop.place_id) {
+      fetchPhotos(stop.place_id);
+    }
+  }, [stop.place_id]);
 
   const fetchPhotos = async (place_id) => {
+    if (photoCache[place_id]) {
+      setPhotos(photoCache[place_id]);
+      return;
+    }
+
+    setLoading(true);
     try {
       const response = await fetch(
         `https://maps.googleapis.com/maps/api/place/details/json?place_id=${place_id}&fields=photos&key=${API_KEY}`
@@ -28,10 +37,14 @@ const TourCard = ({ targetScreen, stop, index }) => {
       const data = await response.json();
 
       if (data.result.photos && data.result.photos.length > 0) {
-        const photoReferences = data.result.photos.map(
-          (photo) =>
-            `https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=${photo.photo_reference}&key=${API_KEY}`
+        const photoReferences = await Promise.all(
+          data.result.photos.map(async (photo) => {
+            const photoUrl = `https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=${photo.photo_reference}&key=${API_KEY}`;
+            return photoUrl;
+          })
         );
+
+        photoCache[place_id] = photoReferences; // Önbelleğe kaydet
         setPhotos(photoReferences);
       } else {
         setPhotos([]);
@@ -39,15 +52,19 @@ const TourCard = ({ targetScreen, stop, index }) => {
     } catch (error) {
       console.error("Error fetching photos:", error);
       setPhotos([]);
+    } finally {
+      setLoading(false);
     }
   };
 
   return (
     <TouchableOpacity style={styles.card} onPress={handlePress}>
+      {loading && <Text>Loading...</Text>}
+      {!loading && photos.length === 0 && null}
       {photos.length > 0 ? (
         <Image source={{ uri: photos[0] }} style={styles.image} />
       ) : (
-        <Text>No image available</Text>
+        <Text>No image </Text>
       )}
       <View style={styles.textContainer}>
         <Text style={styles.text}>{stop.name}</Text>

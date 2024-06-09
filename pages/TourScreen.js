@@ -9,6 +9,7 @@ import {
   ScrollView,
   Dimensions,
   Animated,
+  Button,
 } from "react-native";
 
 import FavoriteIcon from "../component/Icon/FavoriteIcon";
@@ -16,6 +17,7 @@ import TourCard from "../component/Cards/TourCard";
 import calculateDistance from "../Utils/calculateDistance";
 import StarHalfIcon from "../component/Icon/StarHalfIcon";
 import StarIcon from "../component/Icon/StarIcon";
+import { useNavigation } from "@react-navigation/native";
 
 const { width } = Dimensions.get("window");
 
@@ -24,6 +26,12 @@ const TourScreen = ({ route }) => {
   const [selectedId, setSelectedId] = useState(0);
   const scrollX = useRef(new Animated.Value(0)).current;
   const scrollViewRef = useRef();
+
+  const navigation = useNavigation();
+
+  /* redux */
+
+  /* ************************************************** */
 
   const renderStops = () => {
     return tourData.places.map((place, index) => (
@@ -89,6 +97,7 @@ const TourScreen = ({ route }) => {
   const yarimYildizVarMi = ortalamaRating % 1 !== 0;
 
   //****************************** */
+
   return (
     <View style={styles.container}>
       <View style={styles.fixedContent}>
@@ -113,7 +122,7 @@ const TourScreen = ({ route }) => {
           <Text style={styles.infoBarText}>
             {totalStops} Durak • {totalTime} Dakika • Türkçe
           </Text>
-          <FavoriteIcon />
+          <FavoriteIcon tour={tourData} />
         </View>
         <View style={styles.locationContainer}>
           <Text style={styles.locationText}>{tourData.name},</Text>
@@ -216,6 +225,15 @@ const TourScreen = ({ route }) => {
             </View>
           </ScrollView>
         </ScrollView>
+        <View style={styles.buttonContainer}>
+          <View style={styles.buttonInnerContainer}>
+            <Button
+              title="Tura Başla"
+              onPress={() => navigation.navigate("MapScreen", { tourData })}
+              style={styles.tourButton}
+            />
+          </View>
+        </View>
       </View>
     </View>
   );
@@ -327,6 +345,18 @@ const styles = StyleSheet.create({
   contentContainer: { justifyContent: "center", alignItems: "center" },
   contentInnerContainer: { padding: 20 },
   InnerContainerScroll: {},
+  buttonInnerContainer: {
+    backgroundColor: "#000",
+    borderRadius: 12,
+    height: 45,
+    marginBottom: 10,
+    width: 380,
+    justifyContent: "center",
+  },
+  buttonContainer: {
+    justifyContent: "center",
+    alignItems: "center",
+  },
 });
 
 export default TourScreen;

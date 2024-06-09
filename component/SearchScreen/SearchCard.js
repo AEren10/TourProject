@@ -1,14 +1,22 @@
 import React from "react";
-import { View, Text, Image, StyleSheet } from "react-native";
+import { View, Text, Image, StyleSheet, TouchableOpacity } from "react-native";
 
-const SearchCard = ({ image, title }) => {
+import { useNavigation } from "@react-navigation/native";
+
+const SearchCard = ({ item }) => {
+  const navigation = useNavigation();
+
+  const handlePress = () => {
+    navigation.navigate("TourScreen", { tourData: item.tour });
+  };
+
   return (
-    <View style={styles.card}>
-      <Image source={{ uri: image }} style={styles.cardImage} />
+    <TouchableOpacity style={styles.card} onPress={handlePress}>
+      <Image source={{ uri: item.tourImage }} style={styles.cardImage} />
       <View style={styles.cardOverlay}>
-        <Text style={styles.cardTitle}>{title}</Text>
+        <Text style={styles.cardTitle}>{item.name}</Text>
       </View>
-    </View>
+    </TouchableOpacity>
   );
 };
 
@@ -16,7 +24,7 @@ const styles = StyleSheet.create({
   card: {
     flex: 1,
     margin: 5,
-    height: 100,
+    height: 110,
     borderRadius: 10,
     overflow: "hidden",
   },
