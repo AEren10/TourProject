@@ -5,7 +5,7 @@ import { Text, View } from "react-native";
 import HomeScreen from "./pages/HomeScreen";
 import TourScreen from "./pages/TourScreen";
 import ProfileScreen from "./pages/ProfileScreen";
-import TourComponent from "./pages/json";
+import CreateTourScreen from "./pages/CreateTourScreen";
 import MapScreen from "./pages/MapScreen";
 import FavoritesScreen from "./pages/FavoritesScreen";
 
@@ -27,11 +27,7 @@ const TabNavigator = () => {
         component={HomeScreen}
         options={{ headerShown: false }}
       />
-      <Tab.Screen
-        name="TourScreen"
-        component={TourScreen}
-        options={{ headerShown: false }}
-      />
+
       <Tab.Screen
         name="Ara"
         component={ProfileScreen}
@@ -39,7 +35,7 @@ const TabNavigator = () => {
       />
       <Tab.Screen
         name="Oluştur"
-        component={TourComponent}
+        component={CreateTourScreen}
         options={{ headerShown: false }}
       />
       <Tab.Screen
@@ -58,6 +54,11 @@ const MainStackNavigator = () => {
       <Stack.Screen
         name="Tabs"
         component={TabNavigator}
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen
+        name="TourScreen"
+        component={TourScreen}
         options={{ headerShown: false }}
       />
       <Stack.Screen

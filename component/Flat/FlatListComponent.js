@@ -1,11 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { View, StyleSheet, ScrollView, Text } from "react-native";
 import { useNavigation } from "@react-navigation/native";
-
+import { useDispatch, useSelector } from "react-redux";
 import Card from "../Cards/Card";
+import { addActions } from "../../context/SliceLastAction";
 
 const FlatListComponent = ({ header, newsData }) => {
   const navigation = useNavigation();
+
+  const dispatch = useDispatch();
+  const actions = useSelector((state) => state.actions.actions);
 
   if (!newsData) {
     return null; // Eğer newsData undefined ise component render etmeyin
@@ -21,6 +25,7 @@ const FlatListComponent = ({ header, newsData }) => {
             onPress={() => {
               console.log(`Flat item basıldı`);
               navigation.navigate("TourScreen", { tourData: item });
+              dispatch(addActions(item));
             }}
           />
         ))}

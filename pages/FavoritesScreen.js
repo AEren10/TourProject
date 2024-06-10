@@ -11,7 +11,7 @@ import {
   FlatList,
 } from "react-native";
 import { useNavigation } from "@react-navigation/native";
-import Card from "../component/Cards/Card";
+import FavoriteCard from "../component/Cards/FavoriteCard";
 import { useSelector } from "react-redux";
 
 const { width } = Dimensions.get("window");
@@ -20,9 +20,29 @@ const FavoritesScreen = () => {
   const navigation = useNavigation();
 
   const favorites = useSelector((state) => state.favorites.favorites);
-  console.log(favorites);
-
-  const renderItem = ({ item }) => <Card tour={item} />;
+  const actions = useSelector((state) => state.actions.actions);
+  const tours = useSelector((state) => state.tours.tours);
+  console.log(tours.length);
+  const renderItem = ({ item }) => (
+    <FavoriteCard
+      showRemoveButton={true}
+      item={item}
+      onPress={() => navigation.navigate("TourScreen", { tourData: item })}
+    />
+  );
+  const renderActionsItem = ({ item }) => (
+    <FavoriteCard
+      item={item}
+      onPress={() => navigation.navigate("TourScreen", { tourData: item })}
+    />
+  );
+  const renderTourItem = ({ item }) => (
+    <FavoriteCard
+      showRemoveButton={true}
+      item={item}
+      onPress={() => navigation.navigate("TourScreen", { tourData: item })}
+    />
+  );
 
   const [selectedId, setSelectedId] = useState(0);
   const scrollX = useRef(new Animated.Value(0)).current;
@@ -125,6 +145,36 @@ const FavoritesScreen = () => {
           <ScrollView style={styles.InnerContainerScroll}>
             <View style={[styles.contentContainer, { width }]}>
               <View style={styles.contentInnerContainer}>
+                {actions.length > 0 ? (
+                  <FlatList
+                    data={actions}
+                    renderItem={renderActionsItem}
+                    keyExtractor={(item) => item.id}
+                  />
+                ) : (
+                  <Text>No actions added yet.</Text>
+                )}
+              </View>
+            </View>
+          </ScrollView>
+          <ScrollView style={styles.InnerContainerScroll}>
+            <View style={[styles.contentContainer, { width }]}>
+              <View style={styles.contentInnerContainer}>
+                {tours.length > 0 ? (
+                  <FlatList
+                    data={tours}
+                    renderItem={renderTourItem}
+                    keyExtractor={(item) => item.id}
+                  />
+                ) : (
+                  <Text>No tour added yet.</Text>
+                )}
+              </View>
+            </View>
+          </ScrollView>
+          <ScrollView style={styles.InnerContainerScroll}>
+            <View style={[styles.contentContainer, { width }]}>
+              <View style={styles.contentInnerContainer}>
                 {favorites.length > 0 ? (
                   <FlatList
                     data={favorites}
@@ -134,22 +184,6 @@ const FavoritesScreen = () => {
                 ) : (
                   <Text>No favorites added yet.</Text>
                 )}
-              </View>
-            </View>
-          </ScrollView>
-          <ScrollView style={styles.InnerContainerScroll}>
-            <View style={[styles.contentContainer, { width }]}>
-              <View style={styles.contentInnerContainer}>
-                {/* İçerik 2 */}
-                <Text>İpuçları İçeriği</Text>
-              </View>
-            </View>
-          </ScrollView>
-          <ScrollView style={styles.InnerContainerScroll}>
-            <View style={[styles.contentContainer, { width }]}>
-              <View style={styles.contentInnerContainer}>
-                {/* İçerik 3 */}
-                <Text>Benzer İçeriği</Text>
               </View>
             </View>
           </ScrollView>

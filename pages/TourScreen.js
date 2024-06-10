@@ -18,6 +18,7 @@ import calculateDistance from "../Utils/calculateDistance";
 import StarHalfIcon from "../component/Icon/StarHalfIcon";
 import StarIcon from "../component/Icon/StarIcon";
 import { useNavigation } from "@react-navigation/native";
+import { useDispatch } from "react-redux";
 
 const { width } = Dimensions.get("window");
 
@@ -235,6 +236,9 @@ const TourScreen = ({ route }) => {
           </View>
         </View>
       </View>
+      <View style={styles.ClosebuttonContainer}>
+        <Button title="Close" onPress={() => navigation.goBack()} />
+      </View>
     </View>
   );
 };
@@ -245,6 +249,13 @@ const styles = StyleSheet.create({
   },
   fixedContent: {
     // Üst kısım sabit içerik için stil
+  },
+  ClosebuttonContainer: {
+    backgroundColor: "rgba(0, 0, 255, 0.2)",
+    position: "absolute",
+    borderRadius: 20,
+    top: 40,
+    left: 20,
   },
   image: {
     width: "100%",

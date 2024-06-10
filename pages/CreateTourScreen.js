@@ -1,17 +1,22 @@
-// TourScreen.js
+// CreateTourScreen.js
 import React, { useEffect, useState } from "react";
 import { StyleSheet } from "react-native";
 import { View, Text, TextInput, Button, ScrollView } from "react-native";
 import TourCard from "../component/Cards/TourCard";
 import { createGraph } from "../Utils/Graph";
 import { dijkstra } from "../Utils/Dijkstra";
+import { useDispatch, useSelector } from "react-redux";
+import { addTours } from "../context/SliceTour";
+import { useNavigation } from "@react-navigation/native";
 
 const API_KEY = "AIzaSyBfGpyUzM8aM059UtpeCmpUzWxMiwev9n0";
 
-export default function TourScreen() {
+export default function CreateTourScreen() {
   const [stops, setStops] = useState([]);
   const [tour, setTour] = useState([]);
   const [city, setCity] = useState("");
+
+  const navigation = useNavigation();
 
   const fetchStops = async (cityName) => {
     try {
@@ -59,7 +64,6 @@ export default function TourScreen() {
   const fetchTourData = async (city) => {
     await fetchStops(city);
   };
-
   return (
     <ScrollView style={styles.container}>
       <Text style={styles.title}>Tour Screen</Text>
@@ -74,6 +78,12 @@ export default function TourScreen() {
         tour.map((stop, index) => (
           <TourCard key={index} stop={stop} index={index} />
         ))}
+      <Button title="konuma göre ara" onPress={() => fetchTourData("Amasya")} />
+      <Button
+        title="add to Favorites"
+        onPress={() => navigation.navigate("TourScreen", { tour })}
+        disabled={!tour || tour.length === 0} // tour boşsa butonu devre dışı bırak
+      />
     </ScrollView>
   );
 }
