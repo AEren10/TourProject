@@ -365,68 +365,6 @@
               "place_id": "ChIJiy3NjFvByhQRm87UTeJzM9E",
               "place_types": ["point_of_interest", "establishment"],
               "rating": 4
-            },
-            {
-              "lat": 41.0217568,
-              "lon": 29.0066096,
-              "name": "Üsküdar -İstanbul",
-              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
-              "place_id": "ChIJZ0ziTKi5yhQRQRs5YSR5LVw",
-              "place_types": [
-                "tourist_attraction",
-                "point_of_interest",
-                "establishment"
-              ],
-              "rating": 4.7
-            },
-            {
-              "lat": 41.0423821,
-              "lon": 29.0389218,
-              "name": "Beylerbeyi Sarayı Deniz Köşkü Selamlık",
-              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
-              "place_id": "ChIJz22UC9q3yhQR4RqiiMp9vio",
-              "place_types": ["point_of_interest", "establishment"],
-              "rating": 4.8
-            },
-            {
-              "lat": 41.02044730000001,
-              "lon": 29.0289001,
-              "name": "Tarihi Tekke Kalıntısı",
-              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
-              "place_id": "ChIJ2dmphPa3yhQRyH51AunAbmk",
-              "place_types": ["point_of_interest", "establishment"],
-              "rating": 4.3
-            },
-            {
-              "lat": 41.026793,
-              "lon": 29.0153459,
-              "name": "III. Ahmet Çeşmesi",
-              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
-              "place_id": "ChIJ32s1x463yhQR4Co3gPRFEHc",
-              "place_types": ["point_of_interest", "establishment"],
-              "rating": 4.6
-            },
-            {
-              "lat": 41.0282664,
-              "lon": 29.0415755,
-              "name": "Abdülmecid Efendi Köşkü",
-              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
-              "place_id": "ChIJcV2dX-G3yhQR6UYR06pFA58",
-              "place_types": [
-                "tourist_attraction",
-                "point_of_interest",
-                "establishment"
-              ],
-              "rating": 4.4
-            },
-            {
-              "lat": 41.040874,
-              "lon": 29.0387099,
-              "name": "Ahır Köşkü",
-              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
-              "place_id": "ChIJJ4EeONq3yhQRp_yYlmeCL7o",
-              "place_types": ["point_of_interest", "establishment"],
-              "rating": 4.1
             }
           ]
         },
@@ -913,7 +851,7 @@
           "tourImage": "https://image.hurimg.com/i/hurriyet/75/770x0/65323c574e3fe11c10d464f2.jpg",
           "places": [
             {
-              "lat": 41.07679160000001,
+              "lat": 41.0767911,
               "lon": 29.0440649,
               "name": "Bebek Hümayun-u Abad Camii",
               "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/worship_islam_pinlet",
@@ -949,19 +887,7 @@
               "place_types": ["park", "point_of_interest", "establishment"],
               "rating": 4.5
             },
-            {
-              "lat": 38.470992,
-              "lon": 34.203141,
-              "name": "Tepesi Delik Han",
-              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
-              "place_id": "ChIJL6edoybh1RQRR06WPEgSobQ",
-              "place_types": [
-                "tourist_attraction",
-                "point_of_interest",
-                "establishment"
-              ],
-              "rating": 4.3
-            },
+
             {
               "lat": 41.0792566,
               "lon": 29.0469222,
@@ -4220,6 +4146,2433 @@
       ]
     },
     {
+      "name": "Avrupa",
+      "tours": [
+        {
+          "name": "Paris",
+          "tourHeader": "Işıltılı Paris: Şehrin Büyüsü",
+          "tourImage": "https://static4.depositphotos.com/1014739/302/i/950/depositphotos_3025013-stock-photo-beautiful-eiffel-tower.jpg",
+          "places": [
+            {
+              "lat": 48.85561140000001,
+              "lon": 2.3655266,
+              "name": "Place des Vosges",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/tree_pinlet",
+              "place_id": "ChIJUeiI4P9x5kcRqEwHl6V32GQ",
+              "place_types": [
+                "park",
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.6
+            },
+            {
+              "lat": 48.85837009999999,
+              "lon": 2.2944813,
+              "name": "Eyfel Kulesi",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJLU7jZClu5kcR4PcOOO6p3I0",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.7
+            },
+            {
+              "lat": 48.8560114,
+              "lon": 2.3454953,
+              "name": "Conciergerie",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+              "place_id": "ChIJR3122B9u5kcRajG2bEZLypA",
+              "place_types": [
+                "museum",
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.4
+            },
+            {
+              "lat": 48.8555812,
+              "lon": 2.287589,
+              "name": "Promenade Jean-Paul Belmondo",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJAQppDdJx5kcRv5Arh3daFX8",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.9
+            },
+            {
+              "lat": 48.8606111,
+              "lon": 2.337644,
+              "name": "Louvre Müzesi",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+              "place_id": "ChIJD3uTd9hx5kcR1IQvGfr8dbk",
+              "place_types": [
+                "tourist_attraction",
+                "museum",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.7
+            },
+            {
+              "lat": 48.8608316,
+              "lon": 2.3517012,
+              "name": "Place Georges Pompidou",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJFwqVS71v5kcRx07AoPuLgBw",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.8
+            },
+            {
+              "lat": 48.85806849999999,
+              "lon": 2.3489072,
+              "name": "Tour Saint-Jacques",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJGxZyXh5u5kcRLmPA07LoheA",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.5
+            },
+            {
+              "lat": 48.8462218,
+              "lon": 2.3464138,
+              "name": "Panthéon",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/monument_pinlet",
+              "place_id": "ChIJc8mX0udx5kcRWKcjTwDr5QA",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.6
+            },
+            {
+              "lat": 48.8339195,
+              "lon": 2.3323904,
+              "name": "Paris Yer altı Mezarları",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJdbbQwbZx5kcRs7Qu5nPw18g",
+              "place_types": [
+                "tourist_attraction",
+                "cemetery",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.1
+            },
+            {
+              "lat": 48.8634916,
+              "lon": 2.3274943,
+              "name": "Tuileries Bahçesi",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/tree_pinlet",
+              "place_id": "ChIJAQAAMCxu5kcRx--_4QnbGcI",
+              "place_types": [
+                "tourist_attraction",
+                "park",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.6
+            },
+            {
+              "lat": 48.8618718,
+              "lon": 2.3225224,
+              "name": "Quais de la Seine",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJB8imhixu5kcRAXV3U6q9QCc",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.7
+            },
+            {
+              "lat": 48.8848037,
+              "lon": 2.338578,
+              "name": "Wall of Love",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJryei4kRu5kcRgmdcbzUwGWQ",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.3
+            },
+            {
+              "lat": 48.88626559999999,
+              "lon": 2.3401706,
+              "name": "Place du Calvaire",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJW5oPJ5tv5kcRlFf0AmixobY",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.9
+            },
+            {
+              "lat": 48.85747019999999,
+              "lon": 2.347319,
+              "name": "Place du Châtelet",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJb6fChYBv5kcRLdvMz778BBQ",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.2
+            },
+            {
+              "lat": 48.852024,
+              "lon": 2.3521987,
+              "name": "Square de l'Île-de-France",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/tree_pinlet",
+              "place_id": "ChIJu-MFnONx5kcR31rjl0KKgAg",
+              "place_types": [
+                "tourist_attraction",
+                "park",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.5
+            },
+            {
+              "lat": 48.88670459999999,
+              "lon": 2.3431043,
+              "name": "Sacré-cœur Bazilikası",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/worship_christian_pinlet",
+              "place_id": "ChIJ442GNENu5kcRGYUrvgqHw88",
+              "place_types": [
+                "tourist_attraction",
+                "church",
+                "place_of_worship",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.7
+            },
+            {
+              "lat": 48.8599706,
+              "lon": 2.3265592,
+              "name": "Vedettes de Paris",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJeYiCa1Bv5kcR-P-0DJenhSA",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 5
+            },
+            {
+              "lat": 48.855375,
+              "lon": 2.3449609,
+              "name": "Sainte Şapeli",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/worship_christian_pinlet",
+              "place_id": "ChIJR3122B9u5kcRaCck3PlB9DM",
+              "place_types": [
+                "tourist_attraction",
+                "church",
+                "place_of_worship",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.7
+            },
+            {
+              "lat": 48.8836489,
+              "lon": 2.332649,
+              "name": "Place Blanche, paris",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJo5XhGgBv5kcRnzewbmAYfkA",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 0
+            }
+          ]
+        },
+        {
+          "name": "Amsterdam",
+          "tourHeader": "Kanal Şehri: Amsterdam'ın Renkleri",
+          "tourImage": "https://blog.piriguide.com/wp-content/uploads/2022/11/Amsterdam-Gezi-Rehberi-ve-Gezilecek-Yerler-1024x680.jpg",
+          "places": [
+            {
+              "lat": 52.3579946,
+              "lon": 4.8686484,
+              "name": "Vondelpark",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/tree_pinlet",
+              "place_id": "ChIJz3y0xeIJxkcRNcogBVV41Gw",
+              "place_types": [
+                "park",
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.7
+            },
+            {
+              "lat": 52.3728543,
+              "lon": 4.893706799999999,
+              "name": "National Monument",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJEUO-OccJxkcR4VAAGRIGuKA",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.4
+            },
+            {
+              "lat": 52.3701599,
+              "lon": 4.8921108,
+              "name": "The Amsterdam Dungeon",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJC7Uw48AJxkcR28umcgx0C6k",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.4
+            },
+            {
+              "lat": 52.3731835,
+              "lon": 4.8913758,
+              "name": "Amsterdam Kraliyet Sarayı",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJFQ6IwMYJxkcRis8dtZlOkTk",
+              "place_types": [
+                "tourist_attraction",
+                "museum",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.6
+            },
+            {
+              "lat": 52.3599976,
+              "lon": 4.8852188,
+              "name": "Rijksmuseum Amsterdam",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+              "place_id": "ChIJ5Ra7we4JxkcRhYVAaq5zQ9U",
+              "place_types": [
+                "tourist_attraction",
+                "museum",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.6
+            },
+            {
+              "lat": 52.3752182,
+              "lon": 4.8839765,
+              "name": "Anne Frank'ın Evi",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+              "place_id": "ChIJSRE-IcUJxkcRCltjPmVdmtQ",
+              "place_types": [
+                "museum",
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.5
+            },
+            {
+              "lat": 52.3660003,
+              "lon": 4.9165321,
+              "name": "Artis",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJYQCs26EJxkcRPUqKm3hTaA4",
+              "place_types": [
+                "zoo",
+                "aquarium",
+                "tourist_attraction",
+                "park",
+                "museum",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.5
+            },
+            {
+              "lat": 52.37187170000001,
+              "lon": 4.8958282,
+              "name": "Oude Doelenstraat",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJgd8UOqQJxkcR4XUhj1NDnTQ",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.6
+            },
+            {
+              "lat": 52.3745479,
+              "lon": 4.8995369,
+              "name": "De Wallen Red Light District Amsterdam",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJFepCr0wJxkcR_Y1lRcENFG0",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.4
+            },
+            {
+              "lat": 52.3712444,
+              "lon": 4.8978142,
+              "name": "Walekerkpoort",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJ-cCxPtIJxkcRSvdhGA-KmJI",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 3.3
+            },
+            {
+              "lat": 52.3663279,
+              "lon": 4.8895832,
+              "name": "de Gouden bocht",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJTRXZ_kcJxkcRtMmJlSJxqlo",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.3
+            },
+            {
+              "lat": 52.3748239,
+              "lon": 4.8947471,
+              "name": "BODY WORLDS Amsterdam",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+              "place_id": "ChIJ3XSZnccJxkcR-rNgffJJMGI",
+              "place_types": [
+                "tourist_attraction",
+                "museum",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.5
+            },
+            {
+              "lat": 52.367041,
+              "lon": 4.8932901,
+              "name": "Munttoren",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJZabaHsAJxkcRy92UyRY-mT0",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.5
+            },
+            {
+              "lat": 52.36691889999999,
+              "lon": 4.907623,
+              "name": "Hortus Botanicus",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/tree_pinlet",
+              "place_id": "ChIJqxRzZuLhxUcRpgvqX1nIp1A",
+              "place_types": [
+                "tourist_attraction",
+                "park",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.5
+            },
+            {
+              "lat": 52.3731006,
+              "lon": 4.8924274,
+              "name": "Dam Square",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJq-ry-tkJxkcR8i94uYaBUig",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.5
+            },
+            {
+              "lat": 52.3803068,
+              "lon": 4.8916053,
+              "name": "Amsterdam Center View",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJSesAIckJxkcRcenskBkelo4",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.7
+            },
+            {
+              "lat": 52.37388379999999,
+              "lon": 4.8917027,
+              "name": "The New Church",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+              "place_id": "ChIJ0T84-8YJxkcRpAGwFD2ingI",
+              "place_types": [
+                "museum",
+                "tourist_attraction",
+                "church",
+                "place_of_worship",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.3
+            },
+            {
+              "lat": 52.3718714,
+              "lon": 4.8958689,
+              "name": "Channel View",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJwQ9ViYsJxkcRSJhsKkEtGJc",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.7
+            },
+            {
+              "lat": 52.3741709,
+              "lon": 4.912325,
+              "name": "NEMO",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+              "place_id": "ChIJm7tV_qQJxkcRvM4CYqK9SMc",
+              "place_types": [
+                "tourist_attraction",
+                "museum",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.5
+            },
+            {
+              "lat": 52.3623657,
+              "lon": 4.8834734,
+              "name": "Rembrandts Amsterdam Experience",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJ62QMX8cJxkcRIsuFRMFZVBw",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.7
+            }
+          ]
+        },
+        {
+          "name": "Berlin",
+          "tourHeader": "Gece Hayatının Merkezi: Berlin'de Keşif",
+          "tourImage": "https://www.interbustur.com/wp-content/uploads/2017/07/berlin-gezi-rehberi.jpg",
+          "places": [
+            {
+              "lat": 52.5162746,
+              "lon": 13.3777041,
+              "name": "Brandenburg Kapısı",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJiQnyVcZRqEcRY0xnhE77uyY",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.7
+            },
+            {
+              "lat": 52.520815,
+              "lon": 13.4094191,
+              "name": "Berliner Fernsehturm",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJ6_8UkB9OqEcRoeRJQ0j8-sg",
+              "place_types": [
+                "tourist_attraction",
+                "bar",
+                "restaurant",
+                "food",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.4
+            },
+            {
+              "lat": 52.5190608,
+              "lon": 13.401078,
+              "name": "Berlin Katedrali",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/worship_christian_pinlet",
+              "place_id": "ChIJS9HC895RqEcR_IovsNVoDng",
+              "place_types": [
+                "tourist_attraction",
+                "church",
+                "place_of_worship",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.6
+            },
+            {
+              "lat": 52.52198139999999,
+              "lon": 13.413306,
+              "name": "Alexanderplatz",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJbygR2x5OqEcRbhbkZsMB_DA",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.3
+            },
+            {
+              "lat": 52.5209319,
+              "lon": 13.2956165,
+              "name": "Charlottenburg Sarayı",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJ85FCdSVRqEcRGv55KkmuuIs",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.5
+            },
+            {
+              "lat": 52.5092312,
+              "lon": 13.3761053,
+              "name": "Potsdamer Platz",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJIeqReMlRqEcRquFNJTyYoUw",
+              "place_types": [
+                "landmark",
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.4
+            },
+            {
+              "lat": 52.5145229,
+              "lon": 13.3501085,
+              "name": "Berlin Zafer Sütunu",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/monument_pinlet",
+              "place_id": "ChIJw_HTKK9RqEcRyeWAo9t_YlU",
+              "place_types": [
+                "landmark",
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.6
+            },
+            {
+              "lat": 52.5186202,
+              "lon": 13.3761872,
+              "name": "Reichstag",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/civic-bldg_pinlet",
+              "place_id": "ChIJbVDuQcdRqEcR5X3xq9NSG2Q",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.7
+            },
+            {
+              "lat": 52.50502239999999,
+              "lon": 13.4396952,
+              "name": "East Side Gallery",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJS6_t9aZHqEcRGCiRSnvpm94",
+              "place_types": [
+                "landmark",
+                "art_gallery",
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.6
+            },
+            {
+              "lat": 52.53505209999999,
+              "lon": 13.3901898,
+              "name": "Berlin Wall Memorial",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/tree_pinlet",
+              "place_id": "ChIJZ0KxF_JRqEcRrLHB-4r-U-o",
+              "place_types": [
+                "tourist_attraction",
+                "park",
+                "museum",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.6
+            },
+            {
+              "lat": 52.5174032,
+              "lon": 13.4070297,
+              "name": "Nikolaiviertel",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJ-ZLUyQRPqEcRROL55NvWHJ8",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.6
+            },
+            {
+              "lat": 52.5211743,
+              "lon": 13.413297,
+              "name": "World Time Clock",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJmbztRB9OqEcRGBgdJ67pifE",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.4
+            },
+            {
+              "lat": 52.517277,
+              "lon": 13.4016359,
+              "name": "Humboldt Forum im Berliner Schloss",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+              "place_id": "ChIJ61P_Gt9RqEcR0Zp4VZCfHHw",
+              "place_types": [
+                "atm",
+                "tourist_attraction",
+                "cafe",
+                "finance",
+                "museum",
+                "restaurant",
+                "food",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.4
+            },
+            {
+              "lat": 52.5074434,
+              "lon": 13.3903913,
+              "name": "Checkpoint Charlie",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJzdgmXNFRqEcRyIl9R0IApSM",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.1
+            },
+            {
+              "lat": 52.5194665,
+              "lon": 13.3987445,
+              "name": "Altes Museum",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+              "place_id": "ChIJM28dat1RqEcRu_1H_QZRHrY",
+              "place_types": [
+                "tourist_attraction",
+                "museum",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.6
+            },
+            {
+              "lat": 52.5168107,
+              "lon": 13.4140847,
+              "name": "Alte Berliner Stadtmauer",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJE-n_xiNOqEcRnwxMSTYLr9A",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.4
+            },
+            {
+              "lat": 52.5082174,
+              "lon": 13.3769992,
+              "name": "Berlin and car culture - Walking Tour ESP/ENG",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJ22MIb_FRqEcRQDIuOV8ip7Q",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 5
+            },
+            {
+              "lat": 52.51632679999999,
+              "lon": 13.3998943,
+              "name": "Freedom and Unity Memorial",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/monument_pinlet",
+              "place_id": "ChIJfYWeG8RRqEcRYuZayADtE6c",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 2.8
+            },
+            {
+              "lat": 52.51439329999999,
+              "lon": 13.3924143,
+              "name": "Französischer Dom",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJ4ZsybtpRqEcR6CrYP51_Fi0",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.6
+            },
+            {
+              "lat": 52.5181519,
+              "lon": 13.3969499,
+              "name": "German Historical Museum",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+              "place_id": "ChIJnZP4HtxRqEcRw0epcRGQ-_k",
+              "place_types": [
+                "tourist_attraction",
+                "museum",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.5
+            }
+          ]
+        },
+        {
+          "name": "Prag",
+          "tourHeader": "Tarihin Işıltısı: Prag'ın Görkemli Yolları",
+          "tourImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3RpM4TDaQZf9D511VGLBj0IiX8Py3dPiltw&s",
+          "places": [
+            {
+              "lat": 50.0870215,
+              "lon": 14.4207065,
+              "name": "Astronomik Saat Kulesi",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJSS_AOemUC0cRlgaiWrJEe_E",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.7
+            },
+            {
+              "lat": 50.0910966,
+              "lon": 14.4016165,
+              "name": "Prag Kalesi",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJw7ckbB6VC0cRnyUSr4g8zyo",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.7
+            },
+            {
+              "lat": 50.0876983,
+              "lon": 14.4211484,
+              "name": "Staré Město",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJ6dXlGemUC0cRUfsgXBCvACY",
+              "place_types": ["neighborhood", "political"],
+              "rating": 4.2
+            },
+            {
+              "lat": 50.09089179999999,
+              "lon": 14.4005114,
+              "name": "Aziz Vitus Katedrali",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/worship_christian_pinlet",
+              "place_id": "ChIJW08COB6VC0cRoonZ8lA4rWk",
+              "place_types": [
+                "tourist_attraction",
+                "church",
+                "place_of_worship",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.8
+            },
+            {
+              "lat": 50.0875692,
+              "lon": 14.4211875,
+              "name": "Eski Kent Meydanı",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJIfpRNOmUC0cRxHIewgck75c",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.8
+            },
+            {
+              "lat": 50.07449580000001,
+              "lon": 14.4355247,
+              "name": "Prague 2",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJlZ3t4ouUC0cRALMVZg-vAAU",
+              "place_types": [
+                "sublocality_level_1",
+                "sublocality",
+                "political"
+              ],
+              "rating": 4.2
+            },
+            {
+              "lat": 50.0755381,
+              "lon": 14.4378005,
+              "name": "Prag",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJi3lwCZyTC0cRkEAWZg-vAAQ",
+              "place_types": ["locality", "political"],
+              "rating": 4.2
+            },
+            {
+              "lat": 50.0644155,
+              "lon": 14.4200237,
+              "name": "Vyšehrad",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJCd13PWeUC0cRZihTX2RPn0w",
+              "place_types": [
+                "tourist_attraction",
+                "park",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.8
+            },
+            {
+              "lat": 50.0905994,
+              "lon": 14.4258818,
+              "name": "Vinok Sculpture (Ukraine Mothers)",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJa4NueQiVC0cRRGZ71mCMdfs",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.4
+            },
+            {
+              "lat": 50.0864771,
+              "lon": 14.4114366,
+              "name": "Karl Köprüsü",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJn7WO5eWUC0cRJrHT0TiXIHU",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.8
+            },
+            {
+              "lat": 50.087273,
+              "lon": 14.4277887,
+              "name": "Prašná brána",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJBfIPBeuUC0cRphNG7F-4SZM",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.6
+            },
+            {
+              "lat": 50.0877208,
+              "lon": 14.4277908,
+              "name": "Obecní Dům",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJL0C4HuuUC0cREJonDZJQMWo",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.6
+            },
+            {
+              "lat": 50.0797799,
+              "lon": 14.4297318,
+              "name": "Statue of Saint Wenceslas",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJT-xQfI2UC0cR0IsM7hl2QjA",
+              "place_types": [
+                "tourist_attraction",
+                "park",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.7
+            },
+            {
+              "lat": 50.0759236,
+              "lon": 14.4166803,
+              "name": "National Memorial to the Heroes of the Heydrich Terror",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+              "place_id": "ChIJT_DiBvSUC0cRLPuDSuKtZ-I",
+              "place_types": [
+                "tourist_attraction",
+                "museum",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.8
+            },
+            {
+              "lat": 50.0874681,
+              "lon": 14.421342,
+              "name": "Prague Meridian",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJcXydaumUC0cR3zY2bcEHPx8",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.7
+            },
+            {
+              "lat": 50.0905595,
+              "lon": 14.4059796,
+              "name": "Gardens below Prague Castle",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/tree_pinlet",
+              "place_id": "ChIJ2UvksOGUC0cRUe7pDLQy54E",
+              "place_types": [
+                "tourist_attraction",
+                "park",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.6
+            },
+            {
+              "lat": 50.0810226,
+              "lon": 14.4279917,
+              "name": "Wenceslas Square",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJc0xCMe2UC0cRaRUTjnysX9c",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.5
+            },
+            {
+              "lat": 50.0851163,
+              "lon": 14.4300813,
+              "name": "Jindřišská věž",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJu2niIWeTC0cRdkOx-6qN-Fw",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.6
+            },
+            {
+              "lat": 50.0755381,
+              "lon": 14.4378005,
+              "name": "Rathaus",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJKeVO6jaVC0cRdGiWZfyNmlM",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.9
+            },
+            {
+              "lat": 50.0789704,
+              "lon": 14.4309369,
+              "name": "Ulusal Müze",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+              "place_id": "ChIJua9Ogo2UC0cRpkk9dANajkI",
+              "place_types": [
+                "museum",
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Ege",
+      "tours": [
+        {
+          "name": "Fethiye",
+          "tourHeader": "Doğanın Güzelliği: Fethiye'nin Sırları",
+          "tourImage": "https://blog.baruthotels.com/assets/imgs/upload/files/evcil/evcil%202/izmir/oppenheimer/oppen2/cool%20lime/konya/konya%202/fethiye/1-Dogal-Guzellikler-ve-Tarihi-Mekanlar-Konyada-Gezilecek-Yerler-Rehberi.jpg",
+          "places": [
+            {
+              "lat": 36.6189981,
+              "lon": 29.118324,
+              "name": "Amintas Kaya Mezarları",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJT2INUF5BwBQROqI6I92vvII",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.5
+            },
+            {
+              "lat": 36.6182136,
+              "lon": 29.1177526,
+              "name": "Amintas Kral Mezarları",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJ-U1aQV5BwBQRE2FybBeA4pg",
+              "place_types": [
+                "tourist_attraction",
+                "museum",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.4
+            },
+            {
+              "lat": 36.6203155,
+              "lon": 29.1069379,
+              "name": "Theater & Port city view point",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJwc3DQ1NBwBQRAEbg6Opb5Hg",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.8
+            },
+            {
+              "lat": 36.6861049,
+              "lon": 29.0924377,
+              "name": "Holidays in Türkiye",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJ_2rNlOBDwBQRtuil8hLQCeY",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 5
+            },
+            {
+              "lat": 36.6592556,
+              "lon": 29.1132707,
+              "name": "Sultans Aqua City",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJoyApAZNDwBQRWzuvpUh2BBg",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 3.8
+            },
+            {
+              "lat": 36.6518445,
+              "lon": 29.09975,
+              "name": "Fethiye Island Beach",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJD-NJQgRDwBQRxk9CMn5UeQc",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 5
+            },
+            {
+              "lat": 36.6530122,
+              "lon": 29.1170458,
+              "name": "Ördek Adası",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/tree_pinlet",
+              "place_id": "ChIJBcx7QZhDwBQRvGb_m5fUfPA",
+              "place_types": [
+                "tourist_attraction",
+                "park",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.6
+            },
+            {
+              "lat": 36.627458,
+              "lon": 29.0765532,
+              "name": "Boncuklu Beach Park",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/tree_pinlet",
+              "place_id": "ChIJaTohyI5BwBQRAPvdtdpwJ3o",
+              "place_types": [
+                "park",
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.1
+            },
+            {
+              "lat": 36.6410559,
+              "lon": 29.1012409,
+              "name": "Lighthouse",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJgzE_dkRDwBQR7zIMOs2ADro",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4
+            },
+            {
+              "lat": 36.6544641,
+              "lon": 29.1117649,
+              "name": "Çalış Plajı Kuş Cenneti",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/tree_pinlet",
+              "place_id": "ChIJOSc95KJDwBQRKIyTenPbQTQ",
+              "place_types": [
+                "tourist_attraction",
+                "park",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.3
+            },
+            {
+              "lat": 36.659246,
+              "lon": 29.126347,
+              "name": "Kizil island",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJQRxgAP5DwBQRQij9tfiK-YA",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 0
+            },
+            {
+              "lat": 36.6207788,
+              "lon": 29.1058884,
+              "name": "Fethiye Antik Tiyatrosu",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJ8-P4aGNBwBQRXcxnVjTpDik",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.1
+            },
+            {
+              "lat": 36.620483,
+              "lon": 29.117471,
+              "name": "Antik Mezar",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJOwhnuF9BwBQRvMJ9twH8ebg",
+              "place_types": ["point_of_interest", "establishment"],
+              "rating": 4.3
+            },
+            {
+              "lat": 36.6229986,
+              "lon": 29.1167279,
+              "name": "Kadyanda (Cadianda)",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJYd0BEeBDwBQRiiw-osXjJq8",
+              "place_types": ["point_of_interest", "establishment"],
+              "rating": 4
+            },
+            {
+              "lat": 36.5542339,
+              "lon": 29.420206,
+              "name": "Tlos Antık Kenti",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJv6N-xYNNwBQRJwP5Obd_7Ag",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.6
+            },
+            {
+              "lat": 36.6176748,
+              "lon": 29.1130323,
+              "name": "Fethiye Eski Kilise",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJFTP-e8FBwBQRsf21KRuY7Qw",
+              "place_types": ["point_of_interest", "establishment"],
+              "rating": 1
+            },
+            {
+              "lat": 36.618309,
+              "lon": 29.113455,
+              "name": "Kale Kaya Mezarları",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJa1QGQrRBwBQRIoPDh8A8z4M",
+              "place_types": ["point_of_interest", "establishment"],
+              "rating": 4.3
+            },
+            {
+              "lat": 36.6197052,
+              "lon": 29.1154648,
+              "name": "Tarihi Sarnıç",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJXUA1kGtBwBQRqC9kob_lf5Q",
+              "place_types": ["point_of_interest", "establishment"],
+              "rating": 3.9
+            },
+            {
+              "lat": 36.5409101,
+              "lon": 29.0510193,
+              "name": "Akvaryum Koyu",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJr0UxpuA_wBQRjE2D_xJEao4",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.8
+            },
+            {
+              "lat": 36.6602794,
+              "lon": 29.1095675,
+              "name": "Ćalış Plajı",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJ52eChYJDwBQRy1JZyM-RrDQ",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.5
+            }
+          ]
+        },
+        {
+          "name": "Dalaman",
+          "tourHeader": "Eşsiz Koylar: Dalaman'ın Gizemli Dokusu",
+          "tourImage": "https://www.shutterstock.com/image-photo/sarsala-bay-dalaman-town-turkey-600nw-1401004652.jpg",
+          "places": [
+            {
+              "lat": 36.7505133,
+              "lon": 28.8359195,
+              "name": "Ancient city of kalynda",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJWXdhWw1xwBQR-UyWS4CDJ1Y",
+              "place_types": ["point_of_interest", "establishment"],
+              "rating": 4.8
+            },
+            {
+              "lat": 36.66256449999999,
+              "lon": 28.8502662,
+              "name": "Sarsala Koyu",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJXzTzZKZzwBQRqSWwoj1DAvU",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.6
+            },
+            {
+              "lat": 36.6402536,
+              "lon": 28.8549972,
+              "name": "Cleopatra's Baths",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJr23vjZxywBQR0OAQv7lus_o",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.7
+            },
+            {
+              "lat": 36.6311659,
+              "lon": 28.8696744,
+              "name": "Ancient Lydae",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJk2cxUgBtwBQRVOLID9LEqAY",
+              "place_types": ["point_of_interest", "establishment"],
+              "rating": 0
+            }
+          ]
+        },
+        {
+          "name": "Datça",
+          "tourHeader": "Ege'nin İncisi: Datça'nın Huzurlu Koyları",
+          "tourImage": "https://www.etstur.com/letsgo/wp-content/uploads/2019/01/datca-gezilecek-yerler-dingin-ve-huzurlu-bir-tatilin-en-g%C3%BCzel-adreslerinden-datcada-gezilecek-yerler.jpg",
+          "places": [
+            {
+              "lat": 36.7350126,
+              "lon": 27.6979322,
+              "name": "Datça Burgaz Ören Yeri",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJ1bKsuSMlvhQRsfnkY1YDwI0",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.3
+            },
+            {
+              "lat": 36.6880257,
+              "lon": 27.3743909,
+              "name": "Knidos Antik Kenti",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJNZ2DDy-8vxQRhSjSNAdFUOc",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.6
+            },
+            {
+              "lat": 36.7288486,
+              "lon": 27.6892151,
+              "name": "Datca Sahil",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJn-ugbnwlvhQRrsfzwCxOaVQ",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.7
+            },
+            {
+              "lat": 36.7193763,
+              "lon": 27.6863831,
+              "name": "Thermal bath",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJV2drVKIlvhQRavZIkwG2WTw",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.4
+            },
+            {
+              "lat": 36.7558277,
+              "lon": 27.6823451,
+              "name": "Datça",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJ5a8DwSw7vhQRFgEfx8RXvX4",
+              "place_types": ["point_of_interest", "establishment"],
+              "rating": 4.8
+            },
+            {
+              "lat": 36.7391773,
+              "lon": 27.6648154,
+              "name": "Eski Datça Mahallesi",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJN0gJbpUkvhQRrMT4eioL4t0",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.7
+            },
+            {
+              "lat": 36.719674,
+              "lon": 27.6869034,
+              "name": "Datça Gölet",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJ4dhJKPwkvhQRwNiOHgDrw8g",
+              "place_types": [
+                "tourist_attraction",
+                "restaurant",
+                "food",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.6
+            },
+            {
+              "lat": 36.768351,
+              "lon": 27.8009978,
+              "name": "Apollon Kutsal Alanı",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJyyrGcAkxvhQR363e72aTh04",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 3.7
+            },
+            {
+              "lat": 36.726217,
+              "lon": 27.685844,
+              "name": "Datça",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJdXVRSJUkvhQRAHnVaY81DRI",
+              "place_types": ["locality", "political"],
+              "rating": 4.2
+            },
+            {
+              "lat": 36.7227248,
+              "lon": 27.6885415,
+              "name": "Mert Tour Datça - Günübirlik Tekne Turu",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJOUzp38UlvhQRXMAz56BmVhE",
+              "place_types": [
+                "travel_agency",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.6
+            },
+            {
+              "lat": 36.7088047,
+              "lon": 27.6925584,
+              "name": "Saklıkoy (Meteoroloji Plajı)",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJwYroC_glvhQRkJ7ZDocQaGQ",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.5
+            },
+            {
+              "lat": 36.719424,
+              "lon": 27.6869419,
+              "name": "Yerel Tarih Evi",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJJe-qg_4kvhQRcAomUeAtAHs",
+              "place_types": ["point_of_interest", "establishment"],
+              "rating": 4.3
+            },
+            {
+              "lat": 36.7414862,
+              "lon": 27.6538093,
+              "name": "Yarıkdağ Castle (Hızırşah)",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJWY6SJ38lvhQRkwqCaiFb2c8",
+              "place_types": ["point_of_interest", "establishment"],
+              "rating": 5
+            },
+            {
+              "lat": 36.760721,
+              "lon": 27.6923941,
+              "name": "Tarihi Yel Değirmeni",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJOeqos9c6vhQRLnv6wZdvvZQ",
+              "place_types": ["point_of_interest", "establishment"],
+              "rating": 3.9
+            },
+            {
+              "lat": 36.7234939,
+              "lon": 27.6891747,
+              "name": "DATÇA REEF DIVING Dalış Merkezi",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJxWcNQ_0kvhQRJP75u69h7SU",
+              "place_types": [
+                "travel_agency",
+                "school",
+                "point_of_interest",
+                "store",
+                "establishment"
+              ],
+              "rating": 4.8
+            },
+            {
+              "lat": 36.7349641,
+              "lon": 27.6981449,
+              "name": "Stadia/palai - Eski Knidos",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJGyMsuiMlvhQRyLePsQwZEF4",
+              "place_types": ["point_of_interest", "establishment"],
+              "rating": 4.6
+            },
+            {
+              "lat": 36.7561804,
+              "lon": 27.7755703,
+              "name": "AYAK ADASI",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJP8ThiBMxvhQR0MKBH6Ft_R4",
+              "place_types": ["point_of_interest", "establishment"],
+              "rating": 4.8
+            },
+            {
+              "lat": 36.6933102,
+              "lon": 27.4704075,
+              "name": "Çeşmeköy Tarihi Yel Değirmeni / Çeşmeköy Historical Windmill",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJ1bzlJVQfvhQRD9tFDA_OAdE",
+              "place_types": ["point_of_interest", "establishment"],
+              "rating": 4.3
+            },
+            {
+              "lat": 36.7233896,
+              "lon": 27.6889771,
+              "name": "Datça Tekne ve Yat Turu - Dadya Yatçılık",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJYcfwR_0kvhQRsSHqE1WgTGg",
+              "place_types": [
+                "travel_agency",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 5
+            },
+            {
+              "lat": 36.6750923,
+              "lon": 27.6362211,
+              "name": "domuzbükü",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJB4NrYE4hvhQR9Wfcktp45fI",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.6
+            }
+          ]
+        },
+        {
+          "name": "Bodrum",
+          "tourHeader": "Mavi Yolculuk: Bodrum'un Sıcak Esintisi",
+          "tourImage": "https://fabaylife.com/wp-content/uploads/2023/06/blog_bodrumun_dogal_guzellikleri.jpg",
+          "places": [
+            {
+              "lat": 37.0378874,
+              "lon": 27.4241164,
+              "name": "Halikarnas Mozolesi",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJlwmXEkdsvhQR0fktlJphpF4",
+              "place_types": [
+                "tourist_attraction",
+                "museum",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.2
+            },
+            {
+              "lat": 37.0317978,
+              "lon": 27.4291652,
+              "name": "Bodrum Kalesi ve Sualtı Arkeoloji Müzesi",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJYw5gNEJsvhQRcRzUhvXx1Cs",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.5
+            },
+            {
+              "lat": 37.0324443,
+              "lon": 27.4286396,
+              "name": "Bodrum Sualtı Arkeoloji Müzesi",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+              "place_id": "ChIJqdSVl0FsvhQRRE021bxW1MU",
+              "place_types": [
+                "tourist_attraction",
+                "museum",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.4
+            },
+            {
+              "lat": 37.0399767,
+              "lon": 27.4216112,
+              "name": "Bodrum Antik Tiyatrosu",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJv9W_9UdsvhQR2r-WmkBy9K4",
+              "place_types": ["point_of_interest", "establishment"],
+              "rating": 4.5
+            },
+            {
+              "lat": 37.0377363,
+              "lon": 27.4133796,
+              "name": "Myndos Kapısı",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJa74LinVtvhQRBjZuPM4x-bw",
+              "place_types": ["point_of_interest", "establishment"],
+              "rating": 4.2
+            },
+            {
+              "lat": 37.0347481,
+              "lon": 27.4317874,
+              "name": "Bodrum Deniz Müzesi",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+              "place_id": "ChIJ_1Ko1EFsvhQR3P9pZBJXqZ4",
+              "place_types": [
+                "museum",
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.5
+            },
+            {
+              "lat": 37.0302367,
+              "lon": 27.4397033,
+              "name": "Zeki Müren Sanat Müzesi",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+              "place_id": "ChIJBQsjnm5svhQRJz_yDJJmtw0",
+              "place_types": [
+                "tourist_attraction",
+                "museum",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.7
+            },
+            {
+              "lat": 37.0337114,
+              "lon": 27.4150291,
+              "name": "Historic Bodrum House",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJlxX9qfBtvhQReydYA3l6Rgo",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 0
+            },
+            {
+              "lat": 37.0356715,
+              "lon": 27.4321388,
+              "name": "Herodotus Statue",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJkYEbbzdtvhQRDFPDRvgjpZ8",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 3.8
+            },
+            {
+              "lat": 37.0312011,
+              "lon": 27.4384046,
+              "name": "View point to watch the castle at sunset",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJ33DUR_xtvhQRVl1p8RWQ0RQ",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.4
+            },
+            {
+              "lat": 37.0323167,
+              "lon": 27.4247795,
+              "name": "Deniz Feneri",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJ-9t-QkRsvhQRsSeEGLwms-4",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.9
+            },
+            {
+              "lat": 37.0336998,
+              "lon": 27.413158,
+              "name": "Halicarnassus ancient city walls",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJ60GDYQxtvhQRSme8RGkjwUk",
+              "place_types": ["point_of_interest", "establishment"],
+              "rating": 4.5
+            },
+            {
+              "lat": 37.032921,
+              "lon": 27.429682,
+              "name": "Kızılhisarlı Mustafa Paşa Camii",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJzda0gEFsvhQRBujuF58xZJY",
+              "place_types": [
+                "place_of_worship",
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.6
+            },
+            {
+              "lat": 37.0317757,
+              "lon": 27.4292118,
+              "name": "Karia Princess Museum",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+              "place_id": "ChIJ3xrHykNsvhQRe4JG9zohK_8",
+              "place_types": [
+                "museum",
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.5
+            },
+            {
+              "lat": 37.028707,
+              "lon": 27.3900499,
+              "name": "Kümbet",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJnZ_Zu6BtvhQRHD-iGIQ5GeQ",
+              "place_types": ["point_of_interest", "establishment"],
+              "rating": 4.5
+            },
+            {
+              "lat": 37.0663869,
+              "lon": 27.4188887,
+              "name": "Pedasa Antik Kenti",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJKSkfloRuvhQRo7OVs9aIrj8",
+              "place_types": ["point_of_interest", "establishment"],
+              "rating": 4.3
+            },
+            {
+              "lat": 37.0401002,
+              "lon": 27.4266054,
+              "name": "Temple of Area (Mars)",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJa3BrvENtvhQR0m2lWTTKqtg",
+              "place_types": ["point_of_interest", "establishment"],
+              "rating": 1.8
+            },
+            {
+              "lat": 37.0355643,
+              "lon": 27.4285926,
+              "name": "Gulet Bodrum Queen",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJDS2LYhptvhQRLrjXycdhZ8A",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 5
+            },
+            {
+              "lat": 37.0085261,
+              "lon": 27.4574104,
+              "name": "BODRUM",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJWeWTHpdrvhQRHCjzWO75H-Q",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4
+            },
+            {
+              "lat": 37.0321903,
+              "lon": 27.4285815,
+              "name": "Bodrum kalesi",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJN2AI8zhtvhQRfO3RUOAfwqE",
+              "place_types": ["point_of_interest", "establishment"],
+              "rating": 4.7
+            }
+          ]
+        },
+        {
+          "name": "Marmaris",
+          "tourHeader": "Yeşil ve Mavinin Buluştuğu Şehir: Marmaris",
+          "tourImage": "https://marmaristrips.net/images/bigs/2019/02/marmaris_beach_9.png",
+          "places": [
+            {
+              "lat": 36.8505514,
+              "lon": 28.2742787,
+              "name": "Marmaris Kalesi ve Arkeoloji Müzesi",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJgaHLoN29vxQR2YBWDNbMgXE",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.6
+            },
+            {
+              "lat": 36.8547678,
+              "lon": 28.2581985,
+              "name": "Marmaris Amphitheatre",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJcUTsKtK9vxQRHnhor-RpMQE",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.4
+            },
+            {
+              "lat": 36.8519765,
+              "lon": 28.3223332,
+              "name": "Marmaris Milli Parkı",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/tree_pinlet",
+              "place_id": "ChIJGSXI55y-vxQRZAK9-sAVwVA",
+              "place_types": [
+                "tourist_attraction",
+                "park",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.6
+            },
+            {
+              "lat": 36.8434086,
+              "lon": 28.2487402,
+              "name": "Aqua Dream Water Park",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJZWZsk4a-vxQRk20germWVxI",
+              "place_types": [
+                "amusement_park",
+                "tourist_attraction",
+                "park",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 3.8
+            },
+            {
+              "lat": 36.8534368,
+              "lon": 28.2777682,
+              "name": "Marmaris Harbour viewpoint",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJ24u97E29vxQREtinBa2WWp8",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.6
+            },
+            {
+              "lat": 36.854346,
+              "lon": 28.2695516,
+              "name": "İyilik Kayalığı",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJQcZzs8S9vxQR_2WS5oRYiAY",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.1
+            },
+            {
+              "lat": 36.8519642,
+              "lon": 28.266633,
+              "name": "Love marmaris",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJMwPVSWS9vxQR4nbqkU9X0Ys",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.9
+            },
+            {
+              "lat": 36.8426561,
+              "lon": 28.2497824,
+              "name": "Marmaris Viewing area",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJJaznFT6_vxQR9679ilePZY0",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 5
+            },
+            {
+              "lat": 36.8437147,
+              "lon": 28.2544617,
+              "name": "Marmaris Atlantis Suparkı",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJT1fl2H2-vxQROefZQjWC23w",
+              "place_types": [
+                "amusement_park",
+                "tourist_attraction",
+                "park",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.2
+            },
+            {
+              "lat": 36.85452799999999,
+              "lon": 28.2709552,
+              "name": "Площадь Молодежи",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJD5tlaLC9vxQRZ6VlcRwNTO8",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 0
+            },
+            {
+              "lat": 36.8511532,
+              "lon": 28.273983,
+              "name": "Hafsa Sultan Kervansarayı",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJddqVghW9vxQRW_0WIjbOQFE",
+              "place_types": ["point_of_interest", "establishment"],
+              "rating": 3.1
+            },
+            {
+              "lat": 36.8555012,
+              "lon": 28.2537464,
+              "name": "Kervansaray Turkish Night",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJJQODJNO9vxQRvGYts09ezvQ",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.2
+            },
+            {
+              "lat": 36.8529742,
+              "lon": 28.2708461,
+              "name": "Atatürk Heykeli",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJucLfoty9vxQRlVi4IhDbsTw",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.7
+            },
+            {
+              "lat": 36.85302799999999,
+              "lon": 28.2695141,
+              "name": "Türkmenistan Parkı",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/tree_pinlet",
+              "place_id": "ChIJqRTSZ9u9vxQRJB_MZnZcpJI",
+              "place_types": [
+                "park",
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.5
+            },
+            {
+              "lat": 36.8599991,
+              "lon": 28.270578,
+              "name": "Жемчужина Мармариса, Скульптура",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJsyFab6K9vxQREUZ-JgHDiXw",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 5
+            },
+            {
+              "lat": 36.8528943,
+              "lon": 28.276694,
+              "name": "Hobotnica",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJvxuosNa9vxQR4KduKVgtr4c",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.8
+            },
+            {
+              "lat": 36.8527511,
+              "lon": 28.27393,
+              "name": "Monument",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJITxE5Ba9vxQRL-7TQhUy6Zg",
+              "place_types": ["point_of_interest", "establishment"],
+              "rating": 0
+            },
+            {
+              "lat": 36.8510188,
+              "lon": 28.285088,
+              "name": "Günnücek (Marmaris Milli Parkı)",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/tree_pinlet",
+              "place_id": "ChIJj0LKnO-9vxQRKpZpSBu6KN4",
+              "place_types": [
+                "tourist_attraction",
+                "park",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.4
+            },
+            {
+              "lat": 36.8214145,
+              "lon": 28.2324247,
+              "name": "Marmaris View point",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJ5ZmjWjK_vxQRYwHFC_24S8I",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.2
+            },
+            {
+              "lat": 36.854936,
+              "lon": 28.270878,
+              "name": "На фотографии - крепость с Мармариса",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJ__0TVtK9vxQRKHuIou0DDg4",
+              "place_types": ["point_of_interest", "establishment"],
+              "rating": 0
+            }
+          ]
+        },
+        {
+          "name": "İzmir",
+          "tourHeader": "Ege'nin İncisi: İzmir'in Tarihi Güzelliği",
+          "tourImage": "https://api.dokay.com.tr/storage/1476/63280f8b1e3bc7.40466361.jpg",
+          "places": [
+            {
+              "lat": 38.4086587,
+              "lon": 27.1176455,
+              "name": "İzmir Tarihi Asansör Binası",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJ9yZupyXZuxQRRy6zC9zfQLU",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.6
+            },
+            {
+              "lat": 38.418467,
+              "lon": 27.1389068,
+              "name": "Smyrna Agorası",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJByxmkO_YuxQRx0f1bGicRzs",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.5
+            },
+            {
+              "lat": 38.4288177,
+              "lon": 27.1343975,
+              "name": "İzmir Atatürk Anıtı",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/monument_pinlet",
+              "place_id": "ChIJa1lLHPnYuxQRJnuAo7EFzTo",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.6
+            },
+            {
+              "lat": 38.4136506,
+              "lon": 27.1285874,
+              "name": "İzmir Arkeoloji ve Etnografya Müzesi",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+              "place_id": "ChIJzdNI2d_YuxQR73CkeG3uZWg",
+              "place_types": [
+                "tourist_attraction",
+                "museum",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.4
+            },
+            {
+              "lat": 38.49102,
+              "lon": 26.9636834,
+              "name": "İzmir Büyükşehir Belediyesi İzmir Doğal Yaşam Parkı",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJVVVVFT7FuxQRKoE3ksa7y5M",
+              "place_types": [
+                "zoo",
+                "tourist_attraction",
+                "park",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.5
+            },
+            {
+              "lat": 38.419739,
+              "lon": 27.138524,
+              "name": "Agora Ören Yeri",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+              "place_id": "ChIJz4HKgu_YuxQRbTOT_QxqU4U",
+              "place_types": [
+                "tourist_attraction",
+                "museum",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.4
+            },
+            {
+              "lat": 38.418869,
+              "lon": 27.1286678,
+              "name": "İzmir Saat Kulesi",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJZ50aMOLYuxQRvGo84DXFhcU",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.7
+            },
+            {
+              "lat": 38.43565,
+              "lon": 27.1405196,
+              "name": "Atatürk Müzesi",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+              "place_id": "ChIJkeJbMFrYuxQRV_DQMvjsjdk",
+              "place_types": [
+                "museum",
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.8
+            },
+            {
+              "lat": 38.4096411,
+              "lon": 27.1189282,
+              "name": "Peace Steps",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJdYNN4dDZuxQRSJyeUYeUbVY",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 3.5
+            },
+            {
+              "lat": 38.4293688,
+              "lon": 27.1443311,
+              "name": "Egyptian Obelisk",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJ-wePvuTZuxQR-nR8PqvGtzM",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 5
+            },
+            {
+              "lat": 38.42071,
+              "lon": 27.144751,
+              "name": "Altınpark",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJIT0mIfLYuxQR3O81XuwU3nE",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 3.8
+            },
+            {
+              "lat": 38.419052,
+              "lon": 27.1292876,
+              "name": "İzmir Konak Camii",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/worship_islam_pinlet",
+              "place_id": "ChIJ-82jNOLYuxQRUvqleR8jRS0",
+              "place_types": [
+                "mosque",
+                "tourist_attraction",
+                "place_of_worship",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.6
+            },
+            {
+              "lat": 38.4190856,
+              "lon": 27.1292337,
+              "name": "Atatürk Konak Meydanı",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJuVC5OuLYuxQRyrRROa3OA-k",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.6
+            },
+            {
+              "lat": 38.4362961,
+              "lon": 27.1481499,
+              "name": "T.C. Kültür ve Turizm Bakanlığı İzmir Tarih ve Sanat Müzesi/ Museum Of History And Art",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+              "place_id": "ChIJG6SJZ_bYuxQRJI7BJ7IT3eo",
+              "place_types": [
+                "museum",
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.5
+            },
+            {
+              "lat": 38.4635037,
+              "lon": 27.2199369,
+              "name": "Arkas Deniz Tarihi Merkezi",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+              "place_id": "ChIJxeeIryB9uRQRyo4XxmeswqA",
+              "place_types": [
+                "tourist_attraction",
+                "museum",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.8
+            },
+            {
+              "lat": 38.4384947,
+              "lon": 27.1464376,
+              "name": "Турецкий киберпанк",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJz8nZBrXZuxQRlpN-n-ndzhE",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 5
+            },
+            {
+              "lat": 38.4113075,
+              "lon": 27.1277775,
+              "name": "Varyant",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJYW1s7N_YuxQR2GyyM7bxIs8",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.6
+            },
+            {
+              "lat": 38.408794,
+              "lon": 27.1482361,
+              "name": "Tarihi Su Kemerleri",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJN9-VnurYuxQR7Pax5P3JH7o",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.3
+            },
+            {
+              "lat": 38.393588,
+              "lon": 27.1381375,
+              "name": "Kızılçullu Su Kemerleri",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+              "place_id": "ChIJCf1CgtLYuxQRnpAVjUMxVaw",
+              "place_types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+              ],
+              "rating": 4.3
+            },
+            {
+              "lat": 38.4198153,
+              "lon": 27.1384281,
+              "name": "Agora Açık Hava Müzesi",
+              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+              "place_id": "ChIJr90Qf-_YuxQRge0YNU3DiLI",
+              "place_types": ["museum", "point_of_interest", "establishment"],
+              "rating": 4.5
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "aaaaaaaaaaaa",
       "tours": [
         {
@@ -4231,240 +6584,6 @@
               "name": "Casa Batlló",
               "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
               "place_id": "ChIJYUFLSe2ipBIRD04uni940kA",
-              "place_types": [
-                "tourist_attraction",
-                "point_of_interest",
-                "establishment"
-              ],
-              "rating": 4.7
-            },
-            {
-              "lat": 41.4144948,
-              "lon": 2.1526945,
-              "name": "Park Güell",
-              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/tree_pinlet",
-              "place_id": "ChIJq0HUUq6ipBIRWM6qGqALmok",
-              "place_types": [
-                "park",
-                "tourist_attraction",
-                "point_of_interest",
-                "establishment"
-              ],
-              "rating": 4.4
-            },
-            {
-              "lat": 41.3952155,
-              "lon": 2.1619024,
-              "name": "Casa Milà",
-              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
-              "place_id": "ChIJ1eGKmZOipBIRah43T2Kjn8Q",
-              "place_types": [
-                "tourist_attraction",
-                "museum",
-                "point_of_interest",
-                "establishment"
-              ],
-              "rating": 4.6
-            },
-            {
-              "lat": 41.3870154,
-              "lon": 2.1700471,
-              "name": "Katalunya Meydanı",
-              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
-              "place_id": "ChIJGUgrYPGipBIRS9ZgHK_C7B4",
-              "place_types": [
-                "tourist_attraction",
-                "point_of_interest",
-                "establishment"
-              ],
-              "rating": 4.5
-            },
-            {
-              "lat": 41.3751582,
-              "lon": 2.1806792,
-              "name": "Vell Limanı",
-              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
-              "place_id": "ChIJSTWtjVOipBIRj8k9C7up8Y8",
-              "place_types": [
-                "tourist_attraction",
-                "point_of_interest",
-                "establishment"
-              ],
-              "rating": 4.6
-            },
-            {
-              "lat": 41.3841972,
-              "lon": 2.1773925,
-              "name": "Plaça del Rei",
-              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
-              "place_id": "ChIJJ6NJDPmipBIR-7N-fZzI_Fo",
-              "place_types": [
-                "tourist_attraction",
-                "point_of_interest",
-                "establishment"
-              ],
-              "rating": 4.6
-            },
-            {
-              "lat": 41.3838871,
-              "lon": 2.1820711,
-              "name": "Santa Maria del Mar Kilisesi",
-              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/worship_christian_pinlet",
-              "place_id": "ChIJV6QNXv6ipBIRYOHAH1yUvLQ",
-              "place_types": [
-                "tourist_attraction",
-                "church",
-                "place_of_worship",
-                "point_of_interest",
-                "establishment"
-              ],
-              "rating": 4.7
-            },
-            {
-              "lat": 41.3788851,
-              "lon": 2.1742398,
-              "name": "Güell Sarayı",
-              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
-              "place_id": "ChIJ3fHTIFiipBIRpKXCn_E_oJY",
-              "place_types": [
-                "museum",
-                "tourist_attraction",
-                "point_of_interest",
-                "establishment"
-              ],
-              "rating": 4.6
-            },
-            {
-              "lat": 41.383962,
-              "lon": 2.1761991,
-              "name": "Barselona Katedrali",
-              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/worship_christian_pinlet",
-              "place_id": "ChIJg2xxlvmipBIRg1jhdSQR9hY",
-              "place_types": [
-                "tourist_attraction",
-                "church",
-                "place_of_worship",
-                "point_of_interest",
-                "establishment"
-              ],
-              "rating": 4.6
-            },
-            {
-              "lat": 41.4036299,
-              "lon": 2.1743558,
-              "name": "La Sagrada Familia",
-              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/worship_christian_pinlet",
-              "place_id": "ChIJk_s92NyipBIRUMnDG8Kq2Js",
-              "place_types": [
-                "tourist_attraction",
-                "church",
-                "place_of_worship",
-                "point_of_interest",
-                "establishment"
-              ],
-              "rating": 4.8
-            },
-            {
-              "lat": 41.3852706,
-              "lon": 2.1809472,
-              "name": "Barselona Picasso Müzesi",
-              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
-              "place_id": "ChIJa-K8mf6ipBIRY8wAB3EeASc",
-              "place_types": [
-                "tourist_attraction",
-                "museum",
-                "point_of_interest",
-                "establishment"
-              ],
-              "rating": 4.4
-            },
-            {
-              "lat": 41.3875752,
-              "lon": 2.1753128,
-              "name": "Katalan Müzik Sarayı",
-              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
-              "place_id": "ChIJQQSrd_qipBIRQ2xzarVkqn8",
-              "place_types": [
-                "tourist_attraction",
-                "point_of_interest",
-                "establishment"
-              ],
-              "rating": 4.7
-            },
-            {
-              "lat": 41.3826971,
-              "lon": 2.1770236,
-              "name": "Saint James's Square",
-              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
-              "place_id": "ChIJDQeJ-PiipBIRTjO6gbOPY4c",
-              "place_types": [
-                "tourist_attraction",
-                "point_of_interest",
-                "establishment"
-              ],
-              "rating": 4.4
-            },
-            {
-              "lat": 41.4044039,
-              "lon": 2.1754121,
-              "name": "Plaça de Gaudí",
-              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/tree_pinlet",
-              "place_id": "ChIJH7GJwNyipBIRtwSx3flHQPw",
-              "place_types": [
-                "park",
-                "tourist_attraction",
-                "point_of_interest",
-                "establishment"
-              ],
-              "rating": 4.6
-            },
-            {
-              "lat": 41.4034978,
-              "lon": 2.1506455,
-              "name": "Vicens Evi",
-              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
-              "place_id": "ChIJoYA0MqKipBIRRwJG2R8H8s4",
-              "place_types": [
-                "museum",
-                "tourist_attraction",
-                "point_of_interest",
-                "establishment"
-              ],
-              "rating": 4.6
-            },
-            {
-              "lat": 41.3768473,
-              "lon": 2.1843334,
-              "name": "Aquàrium Barcelona",
-              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
-              "place_id": "ChIJtWCztVSipBIRYJl5aFMSIDs",
-              "place_types": [
-                "aquarium",
-                "tourist_attraction",
-                "point_of_interest",
-                "establishment"
-              ],
-              "rating": 4.1
-            },
-            {
-              "lat": 41.3910524,
-              "lon": 2.1806449,
-              "name": "Triomf Kemeri",
-              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/monument_pinlet",
-              "place_id": "ChIJoXZqNuOipBIRsZU39a8r_qk",
-              "place_types": [
-                "tourist_attraction",
-                "point_of_interest",
-                "establishment"
-              ],
-              "rating": 4.6
-            },
-            {
-              "lat": 41.3833034,
-              "lon": 2.1764215,
-              "name": "El Pont del Bisbe",
-              "place_icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
-              "place_id": "ChIJeSfNs_mipBIRuZwbLHR1M2I",
               "place_types": [
                 "tourist_attraction",
                 "point_of_interest",

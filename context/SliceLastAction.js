@@ -10,9 +10,7 @@ const LastActionSlice = createSlice({
   reducers: {
     addActions: (state, action) => {
       // Eylemin listede olup olmadığını kontrol et
-      const exists = state.actions.some(
-        (item) => item.id === action.payload.id
-      );
+      const exists = state.actions.some((item) => item === action.payload);
       // Eğer listede yoksa ekle
       if (!exists) {
         state.actions.push(action.payload);

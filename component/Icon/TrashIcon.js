@@ -6,7 +6,7 @@ import Icon from "react-native-vector-icons/FontAwesome";
 
 const TrashIcon = () => {
   return (
-    <View style={{}}>
+    <View>
       <Icon name={"trash"} size={25} color={"black"} />
     </View>
   );

@@ -11,7 +11,7 @@ const PopularSearchItem = ({ text }) => {
 
 const styles = StyleSheet.create({
   popularItem: {
-    backgroundColor: "#666666",
+    backgroundColor: "#23262F",
     padding: 10,
     margin: 5,
     borderRadius: 50,

@@ -1,10 +1,19 @@
 import React from "react";
-import { View, Button, StyleSheet, Dimensions } from "react-native";
-import MapView, { Marker } from "react-native-maps";
+import {
+  View,
+  Button,
+  Text,
+  StyleSheet,
+  Dimensions,
+  TouchableOpacity,
+} from "react-native";
+import MapView, { Marker, Callout } from "react-native-maps";
 import MapViewDirections from "react-native-maps-directions";
 import { useNavigation } from "@react-navigation/native";
+import Icon from "react-native-vector-icons/Ionicons"; // İkon kütüphanesi
 
-API_KEY = "AIzaSyBfGpyUzM8aM059UtpeCmpUzWxMiwev9n0";
+const API_KEY = "AIzaSyBfGpyUzM8aM059UtpeCmpUzWxMiwev9n0"; // API anahtarınızı buraya ekleyin
+
 const MapScreen = ({ route }) => {
   const { tourData } = route.params;
 
@@ -52,7 +61,18 @@ const MapScreen = ({ route }) => {
             key={index}
             coordinate={{ latitude: stop.lat, longitude: stop.lon }}
             title={stop.name}
-          />
+            pinColor={
+              index === 0
+                ? "green" // Başlangıç markerı yeşil
+                : index === tourStops.length - 1
+                ? "black" // Bitiş markerı siyah
+                : "red" // Diğer markerlar kırmızı (isteğe bağlı)
+            }
+          >
+            <Callout>
+              <Text>{`${index + 1}. Durak: ${stop.name}`}</Text>
+            </Callout>
+          </Marker>
         ))}
         <MapViewDirections
           origin={origin}
@@ -64,8 +84,13 @@ const MapScreen = ({ route }) => {
         />
       </MapView>
 
-      <View style={styles.buttonContainer}>
-        <Button title="Close" onPress={() => navigation.goBack()} />
+      <View style={styles.ClosebuttonContainer}>
+        <TouchableOpacity
+          onPress={() => navigation.goBack()}
+          style={styles.iconButton}
+        >
+          <Icon name="arrow-back-circle-sharp" size={35} color="black" />
+        </TouchableOpacity>
       </View>
     </View>
   );
@@ -79,7 +104,7 @@ const styles = StyleSheet.create({
     width: Dimensions.get("window").width,
     height: Dimensions.get("window").height,
   },
-  buttonContainer: {
+  ClosebuttonContainer: {
     position: "absolute",
     top: 40,
     left: 20,

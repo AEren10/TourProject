@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import {
   View,
   Text,
@@ -6,7 +6,6 @@ import {
   ScrollView,
   Animated,
   Dimensions,
-  Button,
   StyleSheet,
   FlatList,
 } from "react-native";
@@ -21,8 +20,7 @@ const FavoritesScreen = () => {
 
   const favorites = useSelector((state) => state.favorites.favorites);
   const actions = useSelector((state) => state.actions.actions);
-  const tours = useSelector((state) => state.tours.tours);
-  console.log(tours.length);
+
   const renderItem = ({ item }) => (
     <FavoriteCard
       showRemoveButton={true}
@@ -36,22 +34,15 @@ const FavoritesScreen = () => {
       onPress={() => navigation.navigate("TourScreen", { tourData: item })}
     />
   );
-  const renderTourItem = ({ item }) => (
-    <FavoriteCard
-      showRemoveButton={true}
-      item={item}
-      onPress={() => navigation.navigate("TourScreen", { tourData: item })}
-    />
-  );
 
   const [selectedId, setSelectedId] = useState(0);
   const scrollX = useRef(new Animated.Value(0)).current;
   const scrollViewRef = useRef(null);
 
-  const indicatorWidth = width / 3;
+  const indicatorWidth = width / 2;
   const translateX = scrollX.interpolate({
-    inputRange: [0, width, 2 * width],
-    outputRange: [0, indicatorWidth, 2 * indicatorWidth],
+    inputRange: [0, width],
+    outputRange: [0, indicatorWidth],
   });
 
   const handleTabClick = (index) => {
@@ -97,27 +88,9 @@ const FavoritesScreen = () => {
                 selectedId === 1 && styles.selectedHeaderText,
               ]}
             >
-              İçeriklerim
-            </Text>
-            {selectedId === 1 && <View style={styles.selectedIndicator} />}
-          </TouchableOpacity>
-
-          <TouchableOpacity
-            onPress={() => handleTabClick(2)}
-            style={[
-              styles.headerContainer,
-              selectedId === 2 && styles.selectedHeaderContainer,
-            ]}
-          >
-            <Text
-              style={[
-                styles.headerText,
-                selectedId === 2 && styles.selectedHeaderText,
-              ]}
-            >
               Favoriler
             </Text>
-            {selectedId === 2 && <View style={styles.selectedIndicator} />}
+            {selectedId === 1 && <View style={styles.selectedIndicator} />}
           </TouchableOpacity>
         </View>
 
@@ -152,22 +125,7 @@ const FavoritesScreen = () => {
                     keyExtractor={(item) => item.id}
                   />
                 ) : (
-                  <Text>No actions added yet.</Text>
-                )}
-              </View>
-            </View>
-          </ScrollView>
-          <ScrollView style={styles.InnerContainerScroll}>
-            <View style={[styles.contentContainer, { width }]}>
-              <View style={styles.contentInnerContainer}>
-                {tours.length > 0 ? (
-                  <FlatList
-                    data={tours}
-                    renderItem={renderTourItem}
-                    keyExtractor={(item) => item.id}
-                  />
-                ) : (
-                  <Text>No tour added yet.</Text>
+                  <Text>Henüz Son Eylem Yok</Text>
                 )}
               </View>
             </View>
@@ -182,7 +140,7 @@ const FavoritesScreen = () => {
                     keyExtractor={(item) => item.id}
                   />
                 ) : (
-                  <Text>No favorites added yet.</Text>
+                  <Text>Henüz Favorilenmiş Tur Yok</Text>
                 )}
               </View>
             </View>
@@ -215,23 +173,23 @@ const styles = StyleSheet.create({
   },
   headerContainer: {
     padding: 10,
-    width: 130,
+    width: 160,
   },
   selectedHeaderContainer: {
     borderBottomWidth: 2,
-    borderBottomColor: "#000",
+    borderBottomColor: "#D54568",
   },
   headerText: {
     fontSize: 18,
   },
   selectedHeaderText: {
     fontWeight: "bold",
-    color: "pink",
+    color: "#D54568",
   },
 
   animatedIndicator: {
     height: 2,
-    backgroundColor: "black",
+    backgroundColor: "#D54568",
   },
   descScroll: {
     flex: 1,
@@ -246,16 +204,6 @@ const styles = StyleSheet.create({
   },
   contentInnerContainer: {
     padding: 20,
-  },
-  buttonContainer: {
-    padding: 20,
-  },
-  buttonInnerContainer: {
-    borderRadius: 5,
-    overflow: "hidden",
-  },
-  tourButton: {
-    backgroundColor: "#000",
   },
 });
 

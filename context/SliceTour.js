@@ -3,19 +3,19 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
   tours: [],
 };
+const generateUniqueId = () =>
+  Date.now().toString() + Math.random().toString(36).substring(2, 15);
 
 const SliceTour = createSlice({
   name: "tours",
   initialState,
   reducers: {
     addTours: (state, action) => {
-      // Yeni tur objesini oluştur
-      const newTour = {
-        id: Date.now(), // Yeni bir tur için ID oluştur
-        stops: action.payload, // orderedStops array'ini yeni tur objesine ekle
+      const tourData = {
+        id: generateUniqueId(),
+        value: action.payload,
       };
-      // Yeni turu tours array'ine ekle
-      state.tours.push(newTour);
+      state.tours.push(tourData);
     },
     removetours: (state, action) => {
       const removeTourIndex = state.tours.findIndex(

@@ -80,15 +80,6 @@ const ProfileScreen = () => {
           />
         </View>
       </ScrollView>
-      <View style={styles.stickyContainer}>
-        <View style={styles.stickyButtonContainer}>
-          <Button
-            title="Beni rastgele bir yere gönder"
-            onPress={navigateToRandomTour}
-            style={{ color: "black" }}
-          />
-        </View>
-      </View>
     </View>
   );
 };
@@ -120,20 +111,6 @@ const styles = StyleSheet.create({
   tours: {
     flexDirection: "row",
     flexWrap: "wrap",
-  },
-  stickyButtonContainer: {
-    borderRadius: 12,
-    height: 50,
-    marginBottom: 5,
-    width: 370,
-    backgroundColor: "#666666",
-    padding: 6,
-    borderTopWidth: 1,
-    borderColor: "#ddd",
-  },
-  stickyContainer: {
-    justifyContent: "center",
-    alignItems: "center",
   },
 });
 

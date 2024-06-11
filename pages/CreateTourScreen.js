@@ -12,6 +12,7 @@ import { useNavigation } from "@react-navigation/native";
 const API_KEY = "AIzaSyBfGpyUzM8aM059UtpeCmpUzWxMiwev9n0";
 
 export default function CreateTourScreen() {
+  const dispatch = useDispatch();
   const [stops, setStops] = useState([]);
   const [tour, setTour] = useState([]);
   const [city, setCity] = useState("");
@@ -35,7 +36,7 @@ export default function CreateTourScreen() {
       }));
 
       setStops(fetchedStops);
-      // console.log(fetchedStops);
+      console.log(fetchedStops);
     } catch (error) {
       console.error("Error fetching stops:", error);
     }
@@ -66,32 +67,83 @@ export default function CreateTourScreen() {
   };
   return (
     <ScrollView style={styles.container}>
-      <Text style={styles.title}>Tour Screen</Text>
+      <View style={styles.TopContainer}>
+        <Text style={styles.TopHeader}>Yeni Rotalar </Text>
+      </View>
       <TextInput
         style={styles.input}
-        placeholder="Enter city name"
+        placeholder="Şehir ismi girin..."
         value={city}
         onChangeText={setCity}
       />
-      <Button title="Fetch Tour" onPress={() => fetchTourData(city)} />
+      <View style={styles.stickyButtonTopContainer}>
+        <View style={styles.stickyButtonContainer}>
+          <Button
+            title="Turu Oluştur"
+            onPress={() => fetchTourData(city)}
+            color="white"
+          />
+        </View>
+        <View style={styles.stickyButtonContainer}>
+          <Button
+            title="Konuma Göre Tur Oluştur"
+            onPress={() => fetchTourData("Amasya")}
+            color="white"
+            style={{ color: "white" }}
+          />
+        </View>
+      </View>
       {tour.length > 0 &&
         tour.map((stop, index) => (
           <TourCard key={index} stop={stop} index={index} />
         ))}
-      <Button title="konuma göre ara" onPress={() => fetchTourData("Amasya")} />
-      <Button
-        title="add to Favorites"
-        onPress={() => navigation.navigate("TourScreen", { tour })}
-        disabled={!tour || tour.length === 0} // tour boşsa butonu devre dışı bırak
-      />
+      {tour && tour.length > 0 && (
+        <View style={styles.stickyButtonTopContainer}>
+          <View style={styles.stickyButtonContainer}>
+            <Button
+              title="Tura Başla"
+              onPress={() =>
+                navigation.navigate("MapScreen", { tourData: { places: tour } })
+              }
+              color="white"
+              style={{ color: "white" }}
+            />
+          </View>
+        </View>
+      )}
+      {/* <View style={styles.stickyButtonTopContainer}>
+        <View style={styles.stickyButtonContainer}>
+          <Button
+            title="Bu Turu Kaydet"
+            onPress={() =>
+              navigation.navigate("FavoritesScreen", { tourData: tour })
+            }
+            disabled={!tour || tour.length === 0}
+            color="white"
+            style={{ color: "white" }} // tour boşsa butonu devre dışı bırak
+          />
+        </View>
+      </View> */}
     </ScrollView>
   );
 }
 
 const styles = StyleSheet.create({
+  TopContainer: {
+    height: 90,
+    borderBottomWidth: 1,
+    borderColor: "gray",
+  },
+  TopHeader: {
+    marginTop: 40,
+    fontSize: 35,
+    fontWeight: "600",
+  },
+
   container: {
     flex: 1,
     padding: 16,
+    paddingBottom: 50,
   },
   title: {
     fontSize: 24,
@@ -103,5 +155,21 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     marginBottom: 16,
     paddingHorizontal: 8,
+  },
+  stickyButtonContainer: {
+    borderRadius: 12,
+    height: 50,
+    marginBottom: 5,
+    width: 360,
+    backgroundColor: "#D54568",
+    padding: 6,
+    borderTopWidth: 1,
+    borderColor: "#ddd",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  stickyButtonTopContainer: {
+    justifyContent: "center",
+    alignItems: "center",
   },
 });

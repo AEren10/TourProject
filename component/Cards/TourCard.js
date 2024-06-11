@@ -88,10 +88,12 @@ const styles = StyleSheet.create({
     backgroundColor: "white",
     borderRadius: 10,
     shadowColor: "#000",
-    shadowOpacity: 0.1,
-    shadowRadius: 5,
-    shadowOffset: { width: 0, height: 2 },
-    elevation: 3,
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84,
   },
   image: {
     width: 63,

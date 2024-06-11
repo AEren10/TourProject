@@ -15,14 +15,14 @@ import TrashIcon from "../Icon/TrashIcon";
 import { useDispatch } from "react-redux";
 import { removeFavorites } from "../../context/SliceFavorites";
 
-const FavoriteCard = ({ item, onPress, showRemoveButton }) => {
+const ContentsCard = ({ item, onPress, showRemoveButton }) => {
   const dispatch = useDispatch();
-
+  console.log(item);
   const onPressRemove = () => {
     dispatch(removeFavorites(item));
   };
 
-  const ratings = item.places
+  /* const ratings = item.places
     .map((place) => place.rating)
     .filter((rating) => rating > 0);
 
@@ -34,34 +34,23 @@ const FavoriteCard = ({ item, onPress, showRemoveButton }) => {
 
   // Ortalama rating'e göre tam ve yarım yıldız sayılarını hesapla
   const tamYildizSayisi = Math.floor(ortalamaRating);
-  const yarimYildizVarMi = ortalamaRating % 1 !== 0;
+  const yarimYildizVarMi = ortalamaRating % 1 !== 0;*/
   return (
     <TouchableWithoutFeedback onPress={onPress}>
       <View style={styles.container}>
         <View style={styles.innerContainer}>
-          <ImageBackground
-            style={styles.image}
-            source={{ uri: item.tourImage }}
-          ></ImageBackground>
+          <ImageBackground style={styles.image}></ImageBackground>
           <View style={styles.contentContainer}>
             <View style={styles.textContainer}>
-              <Text style={styles.textName}>{item.tourHeader}</Text>
-              <Text style={styles.textCity}>{item.name}</Text>
+              <Text style={styles.textName}>{item.stop[0]}</Text>
+              <Text style={styles.textCity}>{item.city}</Text>
               <View
                 style={{
                   flexDirection: "row",
                   alignItems: "center",
                   marginTop: 3,
                 }}
-              >
-                {[...Array(tamYildizSayisi)].map((_, i) => (
-                  <StarIcon key={i} />
-                ))}
-                {yarimYildizVarMi && <StarHalfIcon />}
-                <Text style={{ marginLeft: 5 }}>
-                  {ortalamaRating.toFixed(1)}
-                </Text>
-              </View>
+              ></View>
             </View>
             {showRemoveButton && (
               <TouchableOpacity
@@ -83,24 +72,11 @@ const styles = StyleSheet.create({
     width: "100%",
     flexDirection: "row",
     marginVertical: 10,
-    borderWidth: 0.5,
-    borderColor: "gray",
-    borderTopRightRadius: 12,
-    borderBottomLeftRadius: 12,
-    borderEndEndRadius: 12,
-    shadowColor: "#000",
-    shadowOffset: {
-      width: 0,
-      height: 2,
-    },
-    shadowOpacity: 0.25,
-    shadowRadius: 3.84,
   },
   innerContainer: {
     flexDirection: "row",
     width: "100%",
-    backgroundColor: "#f5f5f5",
-    borderRadius: 15,
+    backgroundColor: "#fff",
   },
   image: {
     height: 150,
@@ -113,9 +89,9 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: "row",
     justifyContent: "space-between",
+    paddingHorizontal: 10,
   },
   textContainer: {
-    margin: 10,
     flex: 1,
   },
   textName: {
@@ -141,4 +117,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default FavoriteCard;
+export default ContentsCard;

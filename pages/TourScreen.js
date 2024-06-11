@@ -19,8 +19,12 @@ import StarHalfIcon from "../component/Icon/StarHalfIcon";
 import StarIcon from "../component/Icon/StarIcon";
 import { useNavigation } from "@react-navigation/native";
 import { useDispatch } from "react-redux";
+import FavoriteCard from "../component/Cards/FavoriteCard";
+import Icon from "react-native-vector-icons/Ionicons"; // İkon kütüphanesi
 
 const { width } = Dimensions.get("window");
+
+const cityData = require("./citys.json");
 
 const TourScreen = ({ route }) => {
   const { tourData } = route.params;
@@ -28,11 +32,8 @@ const TourScreen = ({ route }) => {
   const scrollX = useRef(new Animated.Value(0)).current;
   const scrollViewRef = useRef();
 
+  const [randomTours, setRandomTours] = useState([]);
   const navigation = useNavigation();
-
-  /* redux */
-
-  /* ************************************************** */
 
   const renderStops = () => {
     return tourData.places.map((place, index) => (
@@ -40,9 +41,54 @@ const TourScreen = ({ route }) => {
     ));
   };
 
+  useEffect(() => {
+    // Uygulama yüklendiğinde rastgele turlar oluştur
+    const newRandomTours = getRandomTours(3, cityData);
+    setRandomTours(newRandomTours);
+  }, []);
+
+  const getRandomTours = (count, cityData) => {
+    const randomTours = [];
+    const availableCities = [...cityData.cities];
+
+    for (let i = 0; i < count; i++) {
+      if (availableCities.length === 0) {
+        break;
+      }
+      const randomCityIndex = Math.floor(
+        Math.random() * availableCities.length
+      );
+      const randomCity = availableCities[randomCityIndex];
+
+      // Şehrin tur listesinden rastgele bir tur seç
+      const randomTourIndex = Math.floor(
+        Math.random() * randomCity.tours.length
+      );
+      const randomTour = randomCity.tours[randomTourIndex];
+
+      // **Places Bilgisini Ekle**
+      randomTour.places = randomCity.tours[randomTourIndex].places;
+
+      randomTours.push(randomTour);
+      // Seçilen şehri ve turu listeden kaldır
+      availableCities.splice(randomCityIndex, 3);
+    }
+
+    return randomTours;
+  };
+
+  const renderItem = ({ item }) => (
+    <FavoriteCard
+      item={item}
+      onPress={() => navigation.navigate("TourScreen", { tourData: item })}
+    />
+  );
+
+  // FlatList için benzer turları rastgele oluştur
+
   // total süre hesaplama
   let totalDistance = 0;
-  const averageSpeed = 25; // km/h
+  const averageSpeed = 8; // km/h
 
   for (let i = 0; i < tourData.places.length - 1; i++) {
     const { lat: lat1, lon: lon1 } = tourData.places[i];
@@ -74,13 +120,13 @@ const TourScreen = ({ route }) => {
     scrollViewRef.current.scrollTo({ x: tabId * width, animated: true });
   };
   const indicatorWidth = scrollX.interpolate({
-    inputRange: [0, width, 2 * width],
-    outputRange: [width / 3, width / 3, width / 3], // Genişliği ayarlayabilirsiniz
+    inputRange: [0, width],
+    outputRange: [width / 2, width / 2], // Genişliği ayarlayabilirsiniz
   });
 
   const translateX = scrollX.interpolate({
-    inputRange: [0, width, 2 * width],
-    outputRange: [0, width / 3, 2 * (width / 3)],
+    inputRange: [0, width],
+    outputRange: [0, width / 2],
   });
   /*     rating değeri    */
   const ratings = tourData.places
@@ -104,7 +150,7 @@ const TourScreen = ({ route }) => {
       <View style={styles.fixedContent}>
         <Image style={styles.image} source={{ uri: tourData.tourImage }} />
         <View style={styles.textContainer}>
-          <Text style={styles.title}>{tourData.name}</Text>
+          <Text style={styles.title}>{tourData.tourHeader}</Text>
           <View
             style={{
               flexDirection: "row",
@@ -126,7 +172,7 @@ const TourScreen = ({ route }) => {
           <FavoriteIcon tour={tourData} />
         </View>
         <View style={styles.locationContainer}>
-          <Text style={styles.locationText}>{tourData.name},</Text>
+          <Text style={styles.locationText}>{tourData.name}</Text>
         </View>
       </View>
 
@@ -163,27 +209,9 @@ const TourScreen = ({ route }) => {
                 selectedId === 1 && styles.selectedHeaderText,
               ]}
             >
-              İpuçları
-            </Text>
-            {selectedId === 1 && <View style={styles.selectedIndicator} />}
-          </TouchableOpacity>
-
-          <TouchableOpacity
-            onPress={() => handleTabClick(2)}
-            style={[
-              styles.headerContainer,
-              selectedId === 2 && styles.selectedHeaderContainer,
-            ]}
-          >
-            <Text
-              style={[
-                styles.headerText,
-                selectedId === 2 && styles.selectedHeaderText,
-              ]}
-            >
               Benzer
             </Text>
-            {selectedId === 2 && <View style={styles.selectedIndicator} />}
+            {selectedId === 1 && <View style={styles.selectedIndicator} />}
           </TouchableOpacity>
         </View>
 
@@ -215,14 +243,13 @@ const TourScreen = ({ route }) => {
           </ScrollView>
           <ScrollView style={styles.InnerContainerScroll}>
             <View style={[styles.contentContainer, { width }]}>
-              <View style={styles.contentInnerContainer}></View>
-            </View>
-          </ScrollView>
-          <ScrollView style={styles.InnerContainerScroll}>
-            <View style={[styles.contentContainer, { width }]}>
-              <View style={styles.contentInnerContainer}>
-                <Text>İçerik 1</Text>
-              </View>
+              <FlatList
+                data={randomTours}
+                keyExtractor={(item) => item.tour}
+                renderItem={renderItem}
+                style={{ width, padding: 20 }}
+                pagingEnabled
+              />
             </View>
           </ScrollView>
         </ScrollView>
@@ -231,13 +258,19 @@ const TourScreen = ({ route }) => {
             <Button
               title="Tura Başla"
               onPress={() => navigation.navigate("MapScreen", { tourData })}
+              color="white"
               style={styles.tourButton}
             />
           </View>
         </View>
       </View>
       <View style={styles.ClosebuttonContainer}>
-        <Button title="Close" onPress={() => navigation.goBack()} />
+        <TouchableOpacity
+          onPress={() => navigation.goBack()}
+          style={styles.iconButton}
+        >
+          <Icon name="arrow-back-circle-sharp" size={35} color="black" />
+        </TouchableOpacity>
       </View>
     </View>
   );
@@ -293,14 +326,14 @@ const styles = StyleSheet.create({
     position: "absolute",
     top: 277, // Görselin yüksekliği kadar
     left: 15,
-    width: 150,
-    backgroundColor: "lightblue",
+    width: 110,
+    backgroundColor: "#D54568",
     paddingHorizontal: 20,
     paddingVertical: 7,
     borderRadius: 8,
   },
   locationText: {
-    fontSize: 12,
+    fontSize: 14,
     fontWeight: "bold",
   },
   description: {
@@ -333,11 +366,11 @@ const styles = StyleSheet.create({
     color: "#000",
   },
   selectedHeaderText: {
-    color: "pink",
+    color: "#D54568",
   },
   animatedIndicator: {
     height: 2,
-    backgroundColor: "pink",
+    backgroundColor: "#D54568",
     position: "absolute",
     top: 40,
     left: 0,
@@ -357,12 +390,15 @@ const styles = StyleSheet.create({
   contentInnerContainer: { padding: 20 },
   InnerContainerScroll: {},
   buttonInnerContainer: {
-    backgroundColor: "#000",
     borderRadius: 12,
-    height: 45,
-    marginBottom: 10,
-    width: 380,
-    justifyContent: "center",
+    height: 50,
+    width: 370,
+    backgroundColor: "#D54568",
+    padding: 6,
+    borderTopWidth: 1,
+    borderColor: "#ddd",
+    color: "white",
+    marginBottom: 20,
   },
   buttonContainer: {
     justifyContent: "center",
