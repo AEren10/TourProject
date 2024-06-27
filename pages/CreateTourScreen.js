@@ -9,7 +9,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { addTours } from "../context/SliceTour";
 import { useNavigation } from "@react-navigation/native";
 
-const API_KEY = "AIzaSyBfGpyUzM8aM059UtpeCmpUzWxMiwev9n0";
+const API_KEY = "YOUR_API_KEY";
 
 export default function CreateTourScreen() {
   const dispatch = useDispatch();

@@ -76,6 +76,7 @@ const TourScreen = ({ route }) => {
 
     return randomTours;
   };
+  const [isLoading, setIsLoading] = useState(false);
 
   const renderItem = ({ item }) => (
     <FavoriteCard

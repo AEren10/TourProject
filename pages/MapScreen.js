@@ -12,7 +12,7 @@ import MapViewDirections from "react-native-maps-directions";
 import { useNavigation } from "@react-navigation/native";
 import Icon from "react-native-vector-icons/Ionicons"; // İkon kütüphanesi
 
-const API_KEY = "AIzaSyBfGpyUzM8aM059UtpeCmpUzWxMiwev9n0"; // API anahtarınızı buraya ekleyin
+const API_KEY = "YOUR_API_KEY"; // API anahtarınızı buraya ekleyin
 
 const MapScreen = ({ route }) => {
   const { tourData } = route.params;

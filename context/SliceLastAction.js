@@ -10,7 +10,9 @@ const LastActionSlice = createSlice({
   reducers: {
     addActions: (state, action) => {
       // Eylemin listede olup olmadığını kontrol et
-      const exists = state.actions.some((item) => item === action.payload);
+      const exists = state.actions.some(
+        (item) => item.name === action.payload.name
+      );
       // Eğer listede yoksa ekle
       if (!exists) {
         state.actions.push(action.payload);
@@ -18,7 +20,7 @@ const LastActionSlice = createSlice({
     },
     removeActions: (state, action) => {
       const removeProduct = state.actions.findIndex(
-        (item) => item.id === action.payload.id
+        (item) => item.name === action.payload.name
       );
       if (removeProduct !== -1) {
         // Eğer ürün bulunursa
